@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import image from "../logo.svg";
 
 function Home() {
   //   const squareX = window.innerWidth / 12 - 1;
@@ -27,7 +28,30 @@ function Home() {
     >
       {/* {squares.map((square) => square)} */}
       <Header />
-
+      <section className="flex flex-col pr-0 bg-slate-800 my-5 p-2 w-5/6 rounded-md">
+        <img
+          src={image}
+          className="flex m-auto w-1/2 mt-0"
+          alt="Daniel Lopez"
+        />
+        <div className="mx-6">
+          <h2 className=" text-2xl font-bold">Junior Software Developer</h2>
+          <p className="mb-4 text-justify text-neutral-300">
+            Hello, I'm Daniel Lopez, a junior software developer located in
+            Brisbane, Australia. I have a strong attention to detail and a
+            passion for all things technical, ranging from software development
+            to hardware and electronics. With experience in React JS,
+            TypeScript, Figma, Node.js, C#, Express, and AWS Cloud, I enjoy
+            working with a diverse set of technologies to bring ideas to life.
+          </p>
+          <h2 className=" text-2xl font-bold">Education</h2>
+          <p className="mb-4 text-justify text-neutral-300">Bachelors of Computer Science</p>
+          <h2 className=" text-2xl font-bold">Experience</h2>
+          <p className="mb-4 text-justify text-neutral-300">blah blah blah</p>
+          <h2 className=" text-2xl font-bold">Skills</h2>
+          <p className="mb-4 text-justify text-neutral-300">blah blah blah</p>
+        </div>
+      </section>
     </article>
   );
 }
