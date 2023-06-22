@@ -26,25 +26,25 @@ const EducationCard: React.FC<EducationCardProps> = ({ props }) => {
       className="border rounded-lg bg-slate-700 px-4 py-2 shadow-2xl mb-4 mx-auto"
       style={style}
     >
-      <div className="flex flex-row mb-4">
+      <div className="flex flex-row mb-0 sm:mb-4">
         <img
           src={props.image}
-          className="flex m-auto mt-0 pr-2"
+          className="my-auto pr-2"
           alt="Logo"
         />
         <div>
-          <p className="text-justify mt-1">{props.title}</p>
-          <p className="text-justify text-neutral-400">{props.subtitle}</p>
+          <p className="mt-1">{props.title}</p>
+          <p className="text-neutral-400 invisible sm:visible h-0 sm:h-auto">{props.subtitle}</p>
         </div>
         <div className="grow">
           <p className="text-right mt-1">{props.gpa}</p>
           <p className="text-right text-neutral-400">{props.date}</p>
         </div>
       </div>
-      <p className="text-justify mt-4">{props.major}</p>
+      <p className="mt-4 mx-1">{props.major}</p>
       <div className="flex flex-row justify-between">
-        <p className="text-justify text-neutral-400">{props.minor1}</p>
-        <p className="text-justify text-neutral-400">{props.minor2}</p>
+        <p className="text-neutral-400 mx-1">{props.minor1}</p>
+        <p className="text-neutral-400 mx-1">{props.minor2}</p>
       </div>
     </section>
   );

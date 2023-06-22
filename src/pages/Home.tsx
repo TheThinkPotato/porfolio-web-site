@@ -38,7 +38,7 @@ const Home: React.FC = () => {
 
         <div className="">
           <article className="py-2 bg-slate-500 shadow-xl">
-            <h2 className="text-2xl font-bold mb-5 mx-10">Skills</h2>
+            <h2 className="text-2xl font-bold mb-5 mx-10 text-center lg:text-left">Skills</h2>
             <div className="flex flex-wrap justify-between">
               {data.skills.map((skills) => (
                 <SkillCard key={Math.random()} props={skills} />
@@ -47,8 +47,8 @@ const Home: React.FC = () => {
           </article>
 
           <article className="mt-5">
-            <h2 className="text-2xl font-bold mb-5 mx-10">Education</h2>
-            <div className="flex flex-wrap justify-between">
+            <h2 className="text-2xl font-bold mb-5 mx-10 text-center lg:text-left">Education</h2>
+            <div className="flex flex-wrap justify-between mx-4 2xl:mx-20">
               {data.education.map((education) => (
                 <EducationCard key={Math.random()} props={education} />
               ))}
@@ -56,8 +56,8 @@ const Home: React.FC = () => {
           </article>
 
           <article className="mt-5">
-            <h2 className="text-2xl font-bold mb-5 mx-10">Experience</h2>
-            <div className="flex flex-wrap justify-between">
+            <h2 className="text-2xl font-bold mb-5 mx-10 text-center lg:text-left">Experience</h2>
+            <div className="flex flex-wrap justify-between mx-4 2xl:mx-20">
               {data.experience.map((experience) => (
                 <ExperienceCard key={Math.random()} props={experience} />
               ))}

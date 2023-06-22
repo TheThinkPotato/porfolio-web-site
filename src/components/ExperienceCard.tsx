@@ -26,7 +26,7 @@ const ExperienceCard: React.FC<ExpProps> = ({ props }) => {
     <div className="flex flex-row mb-4">
       <img
         src={props.image}
-        className="flex m-auto mt-0 pr-2"
+        className="flex m-auto pr-2"
         alt="Logo"
       />
       <div>
