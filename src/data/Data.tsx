@@ -1,6 +1,18 @@
 import React from "react";
 
 const data = {
+    skills: [
+        { title: "React", image: "../images/react-logo.svg" },
+        { title: "TypeScript", image: "../images/typescript-logo.svg" },
+        { title: "Tailwind CSS", image: "../images/tailwind-logo.svg" },
+        { title: "Figma", image: "../images/figma-logo.svg" },
+        { title: "Node.js", image: "../images/nodejs-logo.svg" },
+        { title: "C#", image: "../images/csharp-logo.svg" },
+        { title: "Mongo DB", image: "../images/mongo-logo.svg" },
+        { title: "SQL", image: "../images/sql-logo.svg" },
+    ]
+    ,
+
     education: [
       {
         title: "Bachelors of Computer Science",

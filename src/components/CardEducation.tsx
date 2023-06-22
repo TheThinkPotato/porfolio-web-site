@@ -30,7 +30,7 @@ const EducationCard: React.FC<EducationCardProps> = ({ props }) => {
         <img
           src={props.image}
           className="flex m-auto mt-0 pr-2"
-          alt="Daniel Lopez"
+          alt="Logo"
         />
         <div>
           <p className="text-justify mt-1">{props.title}</p>
