@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
 
         <div className="">
           <article className="py-2 bg-slate-500 shadow-xl">
-            <h2 className="text-3xl font-bold text-center xl:text-left xl:mx-10">Contact Me:</h2>                
+            <h2 className="text-3xl font-bold text-center">Contact Me:</h2>                
           </article>
 
           <article className="mt-5 mx-4 sm:mx-10">

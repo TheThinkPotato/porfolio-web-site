@@ -25,7 +25,7 @@ const Home: React.FC = () => {
           alt="Daniel Lopez"
         />
         <div className="px-10 py-2 bg-slate-700">
-          <h2 className="text-2xl font-bold">» Junior Software Developer «</h2>
+          <h2 className="text-2xl text-center font-bold">» Junior Software Developer «</h2>
           <p className="my-4 text-justify text-neutral-200">
             Hello, I'm Daniel Lopez, a junior software developer located in
             Brisbane, Australia. I have a strong attention to detail and a
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
 
         <div className="">
           <article className="py-2 bg-slate-500 shadow-xl">
-            <h2 className="text-2xl font-bold mb-5 mx-10 text-center lg:text-left">Skills</h2>
+            <h2 className="text-2xl font-bold mb-5 mx-10 text-center">Skills</h2>
             <div className="flex flex-wrap justify-between">
               {data.skills.map((skills) => (
                 <SkillCard key={Math.random()} props={skills} />
@@ -47,7 +47,7 @@ const Home: React.FC = () => {
           </article>
 
           <article className="mt-5">
-            <h2 className="text-2xl font-bold mb-5 mx-10 text-center lg:text-left">Education</h2>
+            <h2 className="text-2xl font-bold mb-5 mx-10 text-center">Education</h2>
             <div className="flex flex-wrap justify-between mx-4 2xl:mx-20">
               {data.education.map((education) => (
                 <EducationCard key={Math.random()} props={education} />
@@ -56,7 +56,7 @@ const Home: React.FC = () => {
           </article>
 
           <article className="mt-5">
-            <h2 className="text-2xl font-bold mb-5 mx-10 text-center lg:text-left">Experience</h2>
+            <h2 className="text-2xl font-bold mb-5 mx-10 text-center">Experience</h2>
             <div className="flex flex-wrap justify-between mx-4 2xl:mx-20">
               {data.experience.map((experience) => (
                 <ExperienceCard key={Math.random()} props={experience} />

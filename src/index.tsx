@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
+import Code from "./pages/Code";
 import Contact from "./pages/Contact";
 
 const root = ReactDOM.createRoot(
@@ -16,6 +17,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/Code" element={<Code />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   </BrowserRouter>

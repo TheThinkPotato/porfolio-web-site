@@ -51,11 +51,11 @@ const Header: React.FC<HeaderProps> = () => {
           )}
           {code === true ? (
             <li className="text-3xl font-bold flex flex-col justify-center text-red-500 bg-slate-900 md:bg-slate-800 hover:text-blue-400 mx-4">
-              <Link to="/">Code</Link>
+              <Link to="/code">Code</Link>
             </li>
           ) : (
             <li className="text-3xl font-bold flex flex-col justify-center hover:text-blue-400 mx-4">
-              <Link to="/">Code</Link>
+              <Link to="/code">Code</Link>
             </li>
           )}
           {contact === true ? (
