@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = () => {
     <section className="flex flex-row pr-0 bg-slate-800 my-5 p-2 rounded-2xl w-2/3">
       <div className="px-5 flex flex-col py-2">
         <h1 className="text-4xl font-bold">DANIEL LOPEZ</h1>
-        <h2 className="text-xl text-justify font-bold">
+        <h2 className="text-xl text-justify font-bold text-slate-300 ">
           Junior Software Developer
         </h2>
       </div>

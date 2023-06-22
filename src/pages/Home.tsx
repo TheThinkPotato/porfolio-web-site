@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import EducationCard from "../components/CardEducation";
 import SkillCard from "../components/SkillCard";
+import ExperienceCard from "../components/ExperienceCard";
 
 import image from "../logo.svg";
 import data from "../data/Data";
@@ -18,15 +19,15 @@ const Home: React.FC = () => {
     >
       {/* {squares.map((square) => square)} */}
       <Header />
-      <section className="flex flex-col pr-0 bg-slate-800 my-5 py-2 w-5/6 rounded-md">
+      <section className="flex flex-col bg-slate-800 my-5 pb-10 w-5/6 rounded-md">
         <img
-          src={image}
-          className="flex m-auto w-1/2 mt-0"
+          src="images/me.jpg"
+          className="flex w-full rounded-t-md"
           alt="Daniel Lopez"
         />
-        <div className="bg-red-800 px-10 py-2">
-          <h2 className="text-2xl font-bold">Junior Software Developer</h2>
-          <p className="mb-4 text-justify text-neutral-200">
+        <div className="px-10 py-2 bg-slate-700">
+          <h2 className="text-2xl font-bold">» Junior Software Developer «</h2>
+          <p className="my-4 text-justify text-neutral-200">
             Hello, I'm Daniel Lopez, a junior software developer located in
             Brisbane, Australia. I have a strong attention to detail and a
             passion for all things technical, ranging from software development
@@ -36,18 +37,18 @@ const Home: React.FC = () => {
           </p>
         </div>
 
-        <div className="mx-10 mt-5">
-          <article>
-            <h2 className="text-2xl font-bold mb-2">Skills</h2>
+        <div className="">
+          <article className="py-2 bg-slate-500 shadow-xl">
+            <h2 className="text-2xl font-bold mb-5 mx-10">Skills</h2>
             <div className="flex flex-wrap justify-between">
-            {data.skills.map((skills) => (
+              {data.skills.map((skills) => (
                 <SkillCard key={Math.random()} props={skills} />
               ))}
             </div>
           </article>
 
-          <article>
-            <h2 className="text-2xl font-bold mb-2">Education</h2>
+          <article className="mt-5">
+            <h2 className="text-2xl font-bold mb-5 mx-10">Education</h2>
             <div className="flex flex-wrap justify-between">
               {data.education.map((education) => (
                 <EducationCard key={Math.random()} props={education} />
@@ -55,8 +56,14 @@ const Home: React.FC = () => {
             </div>
           </article>
 
-          <h2 className=" text-2xl font-bold">Experience</h2>
-          <p className="mb-4 text-justify text-neutral-300">blah blah blah</p>
+          <article className="mt-5">
+            <h2 className="text-2xl font-bold mb-5 mx-10">Experience</h2>
+            <div className="flex flex-wrap justify-between">
+              {data.experience.map((experience) => (
+                <ExperienceCard key={Math.random()} props={experience} />
+              ))}
+            </div>
+          </article>
         </div>
       </section>
     </article>
