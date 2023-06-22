@@ -1,7 +1,9 @@
 import Header from "../components/Header";
+import EducationCard from "../components/CardEducation";
 import image from "../logo.svg";
+import data from "../data/Data";
 
-function Home() {
+const Home: React.FC = () => {
   //   const squareX = window.innerWidth / 12 - 1;
   //   const squareY = window.innerHeight / 12;
   //   const xOffsetAmount = 12;
@@ -51,194 +53,8 @@ function Home() {
         <div className="mx-10 mt-5">
           <article>
             <h2 className="text-2xl font-bold mb-2">Education</h2>
-            <div className="flex flex-wrap justify-between">
-              <section className="border rounded-lg bg-slate-700 w-2/5 px-4 py-2 mx-2 shadow-2xl mb-4">
-                <div className="flex flex-row mb-4">
-                  <img
-                    src={"../images/qut-logo.png"}
-                    className="flex m-auto mt-0 pr-2"
-                    alt="Daniel Lopez"
-                  />
-                  <div>
-                    <p className="text-justify mt-1">
-                      Bachelors of Computer Science
-                    </p>
-                    <p className="text-justify text-neutral-400">
-                      Queensland University of Technology
-                    </p>
-                  </div>
-                  <div className="grow">
-                    <p className="text-right mt-1">GPA 6.875</p>
-                    <p className="text-right text-neutral-400">2020 to 2023</p>
-                  </div>
-                </div>
-                <p className="text-justify mt-4">Computer Science Major</p>
-                <div className="flex flex-row justify-between">
-                  <p className="text-justify text-neutral-400">
-                    Interaction Design Minor
-                  </p>
-                  <p className="text-justify text-neutral-400">
-                    Internet of Things Minor
-                  </p>
-                </div>
-              </section>
-
-              <section className="border rounded-lg bg-slate-700 w-2/5 px-4 py-2 mx-2 shadow-2xl mb-4">
-                <div className="flex flex-row mb-4">
-                  <img
-                    src={"../images/tafe-logo.png"}
-                    className="flex m-auto mt-0 pr-2"
-                    alt="Daniel Lopez"
-                  />
-                  <div>
-                    <p className="text-justify mt-1">
-                      Cert III in Computer Aided Drafting
-                    </p>
-                    <p className="text-justify text-neutral-400">
-                      TAFE Queensland - Mt Gravatt
-                    </p>
-                  </div>
-                  <div className="grow">
-                    <p className="text-right mt-1">Competent</p>
-                    <p className="text-right text-neutral-400">2010</p>
-                  </div>
-                </div>
-                <p className="text-justify mt-4">AutoCAD</p>
-                <div className="flex flex-row justify-between">
-                  <p className="text-justify text-neutral-400">
-                    AutoCAD Inventor
-                  </p>
-                  <p className="text-justify text-neutral-400">
-                    Manual Drafting
-                  </p>
-                </div>
-              </section>
-            
-              <section className="border rounded-lg bg-slate-700 w-2/5 px-4 py-2 mx-2 shadow-2xl mb-4">
-                <div className="flex flex-row mb-4">
-                  <img
-                    src={"../images/tafe-logo.png"}
-                    className="flex m-auto mt-0 pr-2"
-                    alt="Daniel Lopez"
-                  />
-                  <div>
-                    <p className="text-justify mt-1">
-                      Advanced Diploma of Engineering
-                    </p>
-                    <p className="text-justify text-neutral-400">
-                      TAFE Queensland - Eagle Farm
-                    </p>
-                  </div>
-                  <div className="grow">
-                    <p className="text-right mt-1">Competent</p>
-                    <p className="text-right text-neutral-400">2007</p>
-                  </div>
-                </div>
-                <p className="text-justify mt-4">Electrical</p>
-                <div className="flex flex-row justify-between">
-                  <p className="text-justify text-neutral-400">
-                    Digital Electronics
-                  </p>
-                  <p className="text-justify text-neutral-400">
-                    RF Electronics
-                  </p>
-                </div>
-              </section>
-            
-              <section className="border rounded-lg bg-slate-700 w-2/5 px-4 py-2 mx-2 shadow-2xl mb-4">
-                <div className="flex flex-row mb-4">
-                  <img
-                    src={"../images/tafe-logo.png"}
-                    className="flex m-auto mt-0 pr-2"
-                    alt="Daniel Lopez"
-                  />
-                  <div>
-                    <p className="text-justify mt-1">
-                      Cert III in Electrotechnology
-                    </p>
-                    <p className="text-justify text-neutral-400">
-                      TAFE Queensland - Southbank
-                    </p>
-                  </div>
-                  <div className="grow">
-                    <p className="text-right mt-1">Competent</p>
-                    <p className="text-right text-neutral-400">2004</p>
-                  </div>
-                </div>
-                <p className="text-justify mt-4">Apprenticeship</p>
-                <div className="flex flex-row justify-between">
-                  <p className="text-justify text-neutral-400">
-                    Radio
-                  </p>
-                  <p className="text-justify text-neutral-400">
-                    Electrical
-                  </p>
-                </div>
-              </section>
-            
-              <section className="border rounded-lg bg-slate-700 w-2/5 px-4 py-2 mx-2 shadow-2xl mb-4">
-                <div className="flex flex-row mb-4">
-                  <img
-                    src={"../images/tafe-logo.png"}
-                    className="flex m-auto mt-0 pr-2"
-                    alt="Daniel Lopez"
-                  />
-                  <div>
-                    <p className="text-justify mt-1">
-                      Diploma of Engineering
-                    </p>
-                    <p className="text-justify text-neutral-400">
-                      TAFE Queensland - Southbank
-                    </p>
-                  </div>
-                  <div className="grow">
-                    <p className="text-right mt-1">Competent</p>
-                    <p className="text-right text-neutral-400">2002</p>
-                  </div>
-                </div>
-                <p className="text-justify mt-4">Electronics</p>
-                <div className="flex flex-row justify-between">
-                  <p className="text-justify text-neutral-400">
-                    Digital Electronics
-                  </p>
-                  <p className="text-justify text-neutral-400">
-                    Analog Electronics
-                  </p>
-                </div>
-              </section>
-
-              <section className="border rounded-lg bg-slate-700 w-2/5 px-4 py-2 mx-2 shadow-2xl mb-4">
-                <div className="flex flex-row mb-4">
-                  <img
-                    src={"../images/tafe-logo.png"}
-                    className="flex m-auto mt-0 pr-2"
-                    alt="Daniel Lopez"
-                  />
-                  <div>
-                    <p className="text-justify mt-1">
-                      Cert II in Information Technology
-                    </p>
-                    <p className="text-justify text-neutral-400">
-                      Brisbane Institute of TAFE
-                    </p>
-                  </div>
-                  <div className="grow">
-                    <p className="text-right mt-1">Competent</p>
-                    <p className="text-right text-neutral-400">1999</p>
-                  </div>
-                </div>
-                <p className="text-justify mt-4">Traineeship</p>
-                <div className="flex flex-row justify-between">
-                  <p className="text-justify text-neutral-400">
-                    Computer Technician
-                  </p>
-                  <p className="text-justify text-neutral-400">
-                    System Administration
-                  </p>
-                </div>
-              </section>
-
-
+            <div className="flex flex-wrap justify-between">              
+              {data.education.map((education) => ( <EducationCard key={Math.random()} props={education} /> ))}
             </div>
           </article>
 
@@ -250,6 +66,6 @@ function Home() {
       </section>
     </article>
   );
-}
+};
 
 export default Home;
