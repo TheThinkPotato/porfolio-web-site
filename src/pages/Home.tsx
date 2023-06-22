@@ -3,13 +3,12 @@ import EducationCard from "../components/CardEducation";
 import SkillCard from "../components/SkillCard";
 import ExperienceCard from "../components/ExperienceCard";
 
-import image from "../logo.svg";
 import data from "../data/Data";
 
 const Home: React.FC = () => {
   return (
     <article
-      className=" bg-cyan-700 flex flex-col items-center text-white h-full content-center "
+      className=" bg-cyan-700 flex flex-col items-center text-white h-fill content-center "
       style={{
         backgroundImage: "url('images/code2.jpg')",
         backgroundSize: "cover",
