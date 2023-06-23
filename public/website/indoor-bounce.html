@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bounce venue information page">
+    <meta name="author" content="Dan Lopez">
+    <title>Bayside Bubble Bounce Inc Venue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   >
+  </head>
+  <body>
+    <header>
+      <a href="#main-content" class="skip-link">Skip to Main Content</a>
+      <button
+        type="button"
+        id="menu-button"
+        aria-expanded="false"
+        aria-label="Navigation"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="logo-container">
+        <a href="index.html"
+          ><img src="images/Logo.svg" id="logo" alt="Bayside bubble logo"
+       ></a>
+      </div>
+      <nav aria-label="Main">
+        <ul id="flyout-panel" class="flyout-panel-hidden">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="outdoor.html">Outdoors</a></li>
+          <li aria-current="true">
+            <a href="indoor.html" class="active">Indoors</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="background-sky" id="main-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul>
+          <li>
+            <a href="index.html" class="mobile" aria-label="Home"
+              ><i class="fa fa-home"></i
+            ></a>
+            <a href="index.html" class="tablet">Home</a>
+          </li>
+          <li><a href="indoor.html">Indoors</a></li>
+          <li aria-current="page">Bounce</li>
+        </ul>
+      </nav>
+      <section class="header-cloud">
+        <div class="cloud">
+          <h1>Bounce</h1>
+          <h1>Tingalpa</h1>
+        </div>
+      </section>
+
+      <article class="container">
+        <div class="card-venue">
+          <h2>What is it?</h2>
+          <div class="card-text">
+            <p>Bounce is a fun place to just bounce around all day.</p>
+            <p class="end-margin">
+              With its trampoline-based obstacle course to its inside field of
+              trampolines, there is fun at every corner of bounce.
+            </p>
+          </div>
+          <div>
+            <section>
+              <h2>Photos</h2>
+              <div class="venue-photo-container">
+                <figure>
+                  <img
+                    src="images/bounce/bounce-1.jpg"
+                    alt="Main trampoline area"
+                 >
+                  <figcaption>The main trampoline area.</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="images/bounce/bounce-2.jpg"
+                    alt="X-Park obstacle course"
+                 >
+                  <figcaption>Inside X-Park obstacle course.</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="images/bounce/bounce-3.jpg"
+                    alt="Trampoline field"
+                 >
+                  <figcaption>Trampoline field.</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="images/bounce/bounce-4.jpg"
+                    alt="Practice trampolines"
+                 >
+                  <figcaption>Practice trampolines.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="venue-container">
+              <h2>Information</h2>
+              <div class="venue-info-container">
+                <div class="venue-info">
+                  <div class="venue-info-icon">
+                    <img src="images/icons/Toilets.svg" alt="Toilets Symbol">
+                  </div>
+                  <div class="venue-icon-heading">
+                    <p>Public Toilets</p>
+                  </div>
+                </div>
+                <div class="venue-info">
+                  <div class="venue-info-icon">
+                    <img src="images/icons/Cost.svg" alt="Cost Symbol">
+                  </div>
+                  <div class="venue-icon-heading">
+                    <p>Costs Money</p>
+                  </div>
+                </div>
+                <div class="venue-info">
+                  <div class="venue-info-icon">
+                    <img src="images/icons/Parking.svg" alt="Car Park">
+                  </div>
+                  <div class="venue-icon-heading">
+                    <p>Free Parking</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="venue-container venue-pricing">
+              <h2>Pricing</h2>
+              <div>
+                <table>
+                  <tr>
+                    <th>Age</th>
+                    <th>Price</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td>6-15</td>
+                    <td>$21.50</td>
+                    <td>1 hr</td>
+                  </tr>
+                  <tr>
+                    <td>16 +</td>
+                    <td>$23.50</td>
+                    <td>1 hr</td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+
+            <section>
+              <h2>Location</h2>
+              <div class="card-venue-container card-text">
+                <figure>
+                  <img
+                    src="images/bounce/bounce-map.jpg"
+                    alt="Map of bounces location"
+                    id="map"
+                 >
+                  <figcaption>Map courtesy of google maps</figcaption>
+                </figure>
+                <p>Bounce is located at 40 Enterprise Pl, Tingalpa QLD 4173</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <article class="wooden-sign">
+        <a href="outdoor.html">
+          <div>
+            <h3>Too nice to be inside?</h3>
+            <p>Check out our</p>
+            <p><span class="underline">Indoor</span> activities.</p>
+          </div>
+        </a>
+      </article>
+
+      <div class="bg2 container"></div>
+    </main>
+    <footer>
+      <p>© 2022 Bayside Bubble</p>
+      <nav aria-label="footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="outdoor.html">Outdoors</a></li>
+          <li><a href="indoor.html">Indoors</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="javascipt.js"></script>
+  </body>
+</html>

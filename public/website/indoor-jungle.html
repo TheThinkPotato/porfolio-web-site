@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Jungle Adventure venue information page"
+   >
+    <meta name="author" content="Dan Lopez">
+    <title>Bayside Bubble Jungle Adventure Venue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   >
+  </head>
+  <body>
+    <header>
+      <a href="#main-content" class="skip-link">Skip to Main Content</a>
+      <button
+        type="button"
+        id="menu-button"
+        aria-expanded="false"
+        aria-label="Navigation"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="logo-container">
+        <a href="index.html"
+          ><img src="images/Logo.svg" id="logo" alt="Bayside bubble logo"
+       ></a>
+      </div>
+      <nav aria-label="Main">
+        <ul id="flyout-panel" class="flyout-panel-hidden">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="outdoor.html">Outdoors</a></li>
+          <li aria-current="true">
+            <a href="indoor.html" class="active">Indoors</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="background-sky" id="main-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul>
+          <li>
+            <a href="index.html" class="mobile" aria-label="home"
+              ><i class="fa fa-home"></i
+            ></a>
+            <a href="index.html" class="tablet">Home</a>
+          </li>
+          <li><a href="indoor.html">Indoors</a></li>
+          <li aria-current="page">Jungle</li>
+        </ul>
+      </nav>
+      <section class="header-cloud">
+        <div class="cloud">
+          <h1>Jungle</h1>
+          <h1>Adventure</h1>
+        </div>
+      </section>
+
+      <article class="container">
+        <div class="card-venue">
+          <h2>What is it?</h2>
+          <div class="card-text">
+            <p>Jungle adventure is a great place to take the kids for a fun.</p>
+            <p class="end-margin">
+              It has an obstacle course and adventure areas for kids of all
+              ages. It also has a cafe for parents to relax and enjoy a coffee
+              while the kids play.
+            </p>
+          </div>
+
+          <section>
+            <h2>Photos</h2>
+            <div class="venue-photo-container">
+              <figure>
+                <img
+                  src="images/jungle/jungle-1.jpg"
+                  alt="Jungle adventure course"
+               >
+                <figcaption>The main jungle adventure area.</figcaption>
+              </figure>
+              <figure>
+                <img src="images/jungle/jungle-2.jpg" alt="Climbing wall">
+                <figcaption>Climbing Wall</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="images/jungle/jungle-3.jpg"
+                  alt="Diving platform to an air bag pool"
+               >
+                <figcaption>Diving platform to bag pool.</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="images/jungle/jungle-4.jpg"
+                  alt="High obstacle course"
+               >
+                <figcaption>The high obstacle course.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="venue-container">
+            <h2>Information</h2>
+            <div class="venue-info-container">
+              <div class="venue-info">
+                <div class="venue-info-icon">
+                  <img src="images/icons/Table.svg" alt="Picnic Table">
+                </div>
+                <div class="venue-icon-heading">
+                  <p>Eating Areas</p>
+                </div>
+              </div>
+              <div class="venue-info">
+                <div class="venue-info-icon">
+                  <img src="images/icons/Toilets.svg" alt="Toilets Symbol">
+                </div>
+                <div class="venue-icon-heading">
+                  <p>Public Toilets</p>
+                </div>
+              </div>
+              <div class="venue-info">
+                <div class="venue-info-icon">
+                  <img src="images/icons/Cost.svg" alt="Cost Symbol">
+                </div>
+                <div class="venue-icon-heading">
+                  <p>Costs Money</p>
+                </div>
+              </div>
+              <div class="venue-info">
+                <div class="venue-info-icon">
+                  <img src="images/icons/Parking.svg" alt="Car Park">
+                </div>
+                <div class="venue-icon-heading">
+                  <p>Free Parking</p>
+                </div>
+              </div>
+              <div class="venue-info">
+                <div class="venue-info-icon">
+                  <img src="images/icons/Playground.svg" alt="Playground">
+                </div>
+                <div class="venue-icon-heading">
+                  <p>Kids Play Area</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="venue-container venue-pricing">
+            <h2>Pricing</h2>
+            <div>
+              <table>
+                <tr>
+                  <th>Age</th>
+                  <th>Price</th>
+                  <th>Time</th>
+                </tr>
+                <tr>
+                  <td>6-12</td>
+                  <td>$39</td>
+                  <td>3 hrs</td>
+                </tr>
+                <tr>
+                  <td>12 +</td>
+                  <td>$49</td>
+                  <td>3 hrs</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+
+          <section>
+            <h2>Location</h2>
+            <div class="card-venue-container card-text">
+              <figure>
+                <img
+                  src="images/jungle/jungle-map.jpg"
+                  alt="Map of jungle adventures location"
+                  id="map"
+               >
+                <figcaption>Map courtesy of google maps</figcaption>
+              </figure>
+              <p>Jungle is located at 31 Propitiatory Street, Tingalpa, QLD</p>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <article class="wooden-sign">
+        <a href="outdoor.html">
+          <div>
+            <h3>Too nice to be inside?</h3>
+            <p>Check out our</p>
+            <p><span class="underline">Indoor</span> activities.</p>
+          </div>
+        </a>
+      </article>
+
+      <div class="bg2 container"></div>
+    </main>
+    <footer>
+      <p>© 2022 Bayside Bubble</p>
+      <nav aria-label="footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="outdoor.html">Outdoors</a></li>
+          <li><a href="indoor.html">Indoors</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="javascipt.js"></script>
+  </body>
+</html>

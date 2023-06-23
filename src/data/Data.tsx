@@ -1,6 +1,40 @@
 import React from "react";
 
 const data = {
+  code: [
+    {
+      type: "web",
+      title: "OFFbit Web Page",
+      subtitle: "YouTube Channel Web Page",
+      description:
+        "A center point for all of the OFFbit YouTube channel's content. The page is built using React and Tailwind CSS. The page is hosted on Netlify.",
+      image: "../images/code-offbitWeb.jpg",
+      link: "https://offbit.netlify.app/",
+      linkDesc: "OFFbit Web Page Link",
+      tech: ["React","MongoDB", "TailWind"],      
+    },
+    {
+      type: "web",
+      title: "To The Moon",
+      subtitle: "Interactive Music Video in P5js",
+      description: "A music video created in P5js. The video is interactive and the user flies a space shuttle there mission is to land on the moon.",        
+      image: "../images/code-tothemoon.jpg",
+      link: "https://editor.p5js.org/n10956611/full/2LI5iq9UM",
+      linkDesc: "P5JS To The Moon WebLink",
+      tech: ["JavaScript", "P5JS"],
+    },
+    {
+      type: "web",
+      title: "Bayside Bubble",
+      subtitle: "Web Page for bored kids",
+      description: "A web site designed for bored active kids who live in the Wynnum area looking for fun activities to do.",        
+      image: "../images/code-baysideb.jpg",
+      link: "/website/index.html",
+      linkDesc: "Bayside Bubble WebLink",
+      tech: ["HTML", "CSS"],
+    }
+  ],
+
   skills: [
     { title: "React", image: "../images/react-logo.svg" },
     { title: "TypeScript", image: "../images/typescript-logo.svg" },
@@ -83,13 +117,13 @@ const data = {
         "Drafting and commissioning of access control systems and CCTV systems. Responsible for the company's IT system.",
     },
     {
-        company: "OFFbit Tech",
-        position: "YouTube Presenter",
-        date: "2019 to Now",
-        image: "../images/offbit-logo.png",
-        description:
-          "Creation of online technical content for viewers. Maintaining a YouTube channel with over 1000 subscribers.",
-      },
+      company: "OFFbit Tech",
+      position: "YouTube Presenter",
+      date: "2019 to Now",
+      image: "../images/offbit-logo.png",
+      description:
+        "Creation of online technical content for viewers. Maintaining a YouTube channel with over 1000 subscribers.",
+    },
     {
       company: "GS&A",
       position: "Technical Drafter & Project Lead",

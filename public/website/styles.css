@@ -1,0 +1,869 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Coiny", cursive;
+}
+
+header a:focus,
+button:focus,
+footer a:focus {
+  outline: dashed 4px #ff6c00;
+}
+
+a:focus {
+  outline: dashed 4px #ffe477;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 2px #bbb;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.2;
+  text-align: center;
+  color: white;
+  background-image: url("images/wooden-sign-small.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-block: 0.5rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  color: #ffe477;
+}
+
+p,
+span {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+td a {
+  font-family: sans-serif;
+  color: white;
+}
+
+td a:visited {
+  color: white;
+}
+
+td a:hover {
+  color: #ffe477;
+}
+
+figcaption {
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-family: Arial;
+}
+
+body {
+  background-color: #3c281a;
+}
+
+header {
+  background-color: purple;
+  padding: 0 20px;
+  display: block;
+}
+
+header button {
+  position: absolute;
+  top: 0.2rem;
+}
+
+header ul li {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+header nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav li a:hover {
+  color: orange;
+}
+
+.active {
+  color: #ff6c00;
+}
+
+#menu-button {
+  background-color: purple;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.2rem 1rem;
+  border: none;
+  /* border-radius: 0.5rem; */
+  cursor: pointer;
+}
+
+#menu-button:hover {
+  color: orange;
+}
+
+#logo {
+  height: 4rem;
+  float: right;
+}
+
+.logo-container {
+  height: 4rem;
+}
+
+#map {
+  max-width: 280px;
+  border-radius: 15px;
+  border: white solid 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background-image: url("images/footer.png");
+  background-repeat: repeat-x;
+  background-color: #3c281a;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  color: white;
+  height: 160px;
+  animation: animate3 15s linear infinite;
+}
+
+footer nav {
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer nav ul {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+footer nav li {
+  width: 100px;
+  padding-top: 1rem;
+  padding-inline: 1rem;
+  list-style: none;
+  display: inline-block;
+  margin-inline: 0 2rem;
+}
+
+footer nav li a {
+  padding-block: 1rem;
+  color: white;
+  text-decoration: underline;
+}
+
+footer nav li a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+th {
+  font-weight: 800;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+td {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+section ul li:hover {
+  transform: scale(1.1);
+}
+
+section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-items ul {
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+.menu-items ul li {
+  background-image: url("images/deck.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 190px;
+  padding-block: 0.6rem;
+  margin-block: 1rem;
+  margin-inline: 1rem;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.activity-menu-deck {
+  height: 80px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -250px;
+}
+
+.skip-link:focus {
+  margin: 0.6rem;
+  position: initial;
+  background-color: #f47;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  text-decoration-line: none;
+}
+
+/* Breadcrumbs */
+
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumb li {
+  padding-left: 0.5rem;
+}
+
+.breadcrumb li:not([aria-current])::after {
+  content: ">";
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.breadcrumb li {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.breadcrumb a:visited,
+.breadcrumb a:link {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.breadcrumb a:hover {
+  color: #ffe477;
+}
+
+.breadcrumb a:focus {
+  outline: dashed 4px purple;
+}
+
+/* Page Heading Cloud */
+
+.header-cloud {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-inline: 0.5rem;
+  margin-inline: auto;
+  max-width: 350px;
+}
+
+.cloud {
+  height: 120px;
+  padding-top: 2rem;
+  background-image: url("images/cloud.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.cloud h1 {
+  margin-top: 2rem;
+  padding-inline: 2rem;
+}
+
+.cloud h1:last-child {
+  margin-top: 0;
+}
+
+/* Backgrounds */
+
+.background-sky {
+  background: linear-gradient(
+    180deg,
+    rgba(227, 135, 237, 1) 0%,
+    rgba(206, 220, 229, 1) 40%
+  );
+}
+
+.activities-city-background {
+  background: rgb(206, 220, 229);
+  background: linear-gradient(
+    180deg,
+    rgba(227, 235, 237, 1) 50%,
+    rgba(206, 220, 229, 1) 80%
+  );
+  background-image: url("images/city.png");
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+}
+
+.ground-image {
+  background-image: url("images/ground.png");
+  position: relative;
+  height: 20vh;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: animate 3s linear infinite;
+}
+
+.background-houses {
+  background-image: url("images/houses.png");
+  position: relative;
+  height: 15vh;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: animate2 120s linear infinite;
+}
+
+.background-city {
+  background-image: url("images/city.png");
+  height: 80px;
+}
+
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes animate2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes animate3 {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.skate-boarder {
+  height: 70%;
+  margin-top: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.skate-boarder:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.skate-boarder:active {
+  animation: spin 0.9s alternate-reverse infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(310deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* default classes */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row {
+  flex-direction: row;
+  margin-inline: auto;
+}
+
+.col {
+  flex-direction: column;
+  margin-inline: auto;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.end-margin {
+  margin-bottom: 4rem;
+}
+
+/* cards */
+
+.card-text {
+  margin: auto;
+  max-width: 700px;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-radius: 30px;
+  width: 340px;
+  color: white;
+  border: #f47 outset 10px;
+  background: #fa0057;
+}
+
+.card img {
+  margin-inline: auto;
+  margin-top: 0.5rem;
+  width: 94%;
+  border-radius: 15px;
+  border: white solid 3px;
+}
+
+.card p {
+  margin-block: 0.5rem;
+  margin-inline: 0.8rem;
+}
+
+.card h2 {
+  margin-top: 0.2rem;
+  margin-inline: 0.8rem;
+}
+
+.card-selectable a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-selectable:hover {
+  border: orange outset 10px;
+  background: #ff6c00;
+  border-radius: 30px;
+}
+
+/* Brown wooden sign */
+
+.wooden-sign {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.wooden-sign div {
+  height: 5.8rem;
+  width: 285px;
+  padding-inline: 2.5rem;
+  padding-block: 1.4rem;
+  text-align: center;
+  color: white;
+  background-image: url("images/wooden-sign.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wooden-sign a:focus {
+  outline: dashed 4px #ff6c00;
+}
+
+.wooden-sign div:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.wooden-sign a {
+  text-decoration: none;
+  color: white;
+}
+
+/* about page */
+
+.card-about {
+  margin-inline: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  border: #f47 outset 10px;
+  background: #fa0057;
+}
+
+.card-about p {
+  max-width: 550px;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.card-about h2 {
+  margin-bottom: 1rem;
+}
+
+.card-about table {
+  margin-inline: auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.card-about table i {
+  padding: 0.5rem;
+}
+
+.card-about section {
+  margin-bottom: 4rem;
+}
+
+.card-about section:last-child {
+  margin-bottom: 0;
+}
+
+.about-left-column {
+  padding-inline: 1rem;
+}
+
+.references a {
+  display: block;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  padding-block: 0.5rem;
+}
+
+.references a:hover {
+  color: #ffe477;
+}
+
+/* Venue Page Classes */
+
+.card-venue {
+  max-width: 330px;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  border: #f47 outset 10px;
+  background: #fa0057;
+}
+
+.card-venue figure {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-venue h2 {
+  margin-top: 1rem;
+}
+
+.card-venue p {
+  text-align: left;
+  margin-top: 1rem;
+  margin-inline: 1.5rem;
+}
+
+.venue-photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.venue-photo-container figure img {
+  margin-inline: auto;
+  margin-top: 0.5rem;
+  max-width: 270px;
+  border-radius: 15px;
+  border: white solid 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.venue-container {
+  margin-bottom: 4rem;
+}
+
+.venue-pricing {
+  display: inline-block;
+  margin-inline: auto;
+}
+
+.venue-info {
+  position: relative;
+  background-color: #f47;
+  padding-inline: 1.4rem;
+  padding-top: 1rem;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  /* margin-inline: 1rem; */
+  width: 30%;
+  height: 180px;
+}
+
+.venue-info h4 {
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+}
+
+table,
+th,
+.venue-pricing td {
+  padding-inline: 1.5rem;
+  border-collapse: collapse;
+}
+
+.venue-icon-heading {
+  margin: 0;
+  width: 140px;
+  position: relative;
+  left: -27px;
+}
+
+.venue-icon-heading p {
+  text-align: center;
+  margin-inline: 0;
+  font-weight: 800;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+.venue-info-icon {
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.venue-info-icon img {
+  height: 80px;
+}
+
+.venue-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* Mobile drop down menu */
+
+/* By default, in mobile view, have the flyout panel hidden */
+.flyout-panel-hidden {
+  display: none;
+}
+
+/* When the button is clicked, add this style */
+.flyout-panel-visible {
+  display: block;
+}
+
+/* Screen Size Overrides */
+
+@media only screen and (min-width: 375px) {
+  .mobile {
+    display: inline;
+  }
+
+  .tablet {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: inline;
+  }
+
+  #logo {
+    float: none;
+  }
+
+  .logo-container {
+    height: 0;
+  }
+
+  /* Override all the toggles in full screen and just show the menu   */
+  #flyout-panel {
+    display: flex;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  header ul li {
+    padding-block: 0.8rem;
+    padding-inline: 0.7rem;
+    margin: 0 10px;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  .card {
+    margin-inline: 2rem;
+  }
+
+  .menu-items ul li {
+    margin-inline: 1rem;
+  }
+
+  .breadcrumb {
+    float: left;
+  }
+
+  .card-venue {
+    max-width: 700px;
+  }
+
+  .venue-photo-container figure img {
+    margin-inline: 1rem;
+  }
+
+  #map {
+    margin-top: 1.6rem;
+    max-width: 400px;
+  }
+
+  table,
+  th,
+  .venue-pricing td {
+    padding-inline: 4rem;
+  }
+
+  .venue-info h4 {
+    padding-inline: 0.2rem;
+  }
+
+  .venue-info {
+    padding-inline: 2rem;
+    position: relative;
+    margin-top: 2rem;
+    width: 80px;
+  }
+
+  .venue-icon-heading {
+    position: relative;
+  }
+  .venue-info-icon {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .venue-info-icon img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .venue-photo-container figure img {
+    border: white solid 20px;
+  }
+
+  #map {
+    border: white solid 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #logo {
+    padding-inline: 2rem;
+  }
+
+  header ul li {
+    padding-inline: 2rem;
+  }
+
+  .card {
+    margin-inline: 5rem;
+  }
+
+  .menu-items ul li {
+    margin-inline: 5rem;
+  }
+
+  .card-venue {
+    max-width: 1300px;
+  }
+
+  .venue-photo-container figure img {
+    max-width: 500px;
+  }
+
+  .card-venue figure {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  table,
+  th,
+  .venue-pricing td {
+    padding-inline: 6rem;
+  }
+
+  .card-about {
+    width: 1000px;
+  }
+
+  .venue-info {
+    padding-top: 2rem;
+    border-radius: 2rem;
+    margin: 2rem;
+  }
+
+  .card-about p {
+    text-align: left;
+    max-width: 750px;
+  }
+
+  #map {
+    max-width: 640px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .animation {
+    animation: none;
+  }
+}

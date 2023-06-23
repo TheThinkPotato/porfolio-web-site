@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Bayside Bubble - A place for active bored kids to find something to do in the bayside area."
+   >
+    <meta name="author" content="Dan Lopez">
+    <title>Bayside Bubble</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   >
+  </head>
+  <body>
+    <header>
+      <a href="#main-content" class="skip-link">Skip to Main Content</a>
+      <button
+        type="button"
+        id="menu-button"
+        aria-expanded="false"
+        aria-label="Navigation"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="logo-container">
+        <a href="index.html"
+          ><img src="images/Logo.svg" id="logo" alt="Bayside bubble logo"
+       ></a>
+      </div>
+      <nav aria-label="Main">
+        <ul id="flyout-panel" class="flyout-panel-hidden">
+          <li aria-current="page">
+            <a href="index.html" class="active">Home</a>
+          </li>
+          <li><a href="outdoor.html">Outdoors</a></li>
+          <li><a href="indoor.html">Indoors</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="background-sky" id="main-content">
+      <section class="header-cloud">
+        <div class="cloud">
+          <h1>Bayside</h1>
+          <h1>Bubble</h1>
+        </div>
+
+        <p>Finding fun things to do for active kids in the bayside.</p>
+      </section>
+      <section>
+        <h2>Activities</h2>
+        <nav class="menu-items">
+          <ul class="container activity-menu-deck">
+            <li><a href="outdoor.html">Outdoors</a></li>
+            <li><a href="indoor.html">Indoors</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <div class="background-city"></div>
+      <div class="background-houses"></div>
+      <div class="ground-image container">
+        <img src="images/skeg.png" alt="skaterboarder" class="skate-boarder">
+      </div>
+    </main>
+    <footer>
+      <p>© 2022 Bayside Bubble</p>
+      <nav aria-label="footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="outdoor.html">Outdoors</a></li>
+          <li><a href="indoor.html">Indoors</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="javascipt.js"></script>
+  </body>
+</html>

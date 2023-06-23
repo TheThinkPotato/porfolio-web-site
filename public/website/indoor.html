@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bayside Bubbles Indoor Activities">
+    <meta name="author" content="Dan Lopez">
+    <title>Bayside Bubble Indoor Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   >
+  </head>
+  <body>
+    <header>
+      <a href="#main-content" class="skip-link">Skip to Main Content</a>
+      <button
+        type="button"
+        id="menu-button"
+        aria-expanded="false"
+        aria-label="Navigation"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="logo-container">
+        <a href="index.html"
+          ><img src="images/Logo.svg" id="logo" alt="Bayside bubble logo"
+       ></a>
+      </div>
+      <nav aria-label="Main">
+        <ul id="flyout-panel" class="flyout-panel-hidden">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="outdoor.html">Outdoors</a></li>
+          <li aria-current="page">
+            <a href="indoor.html" class="active">Indoors</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="background-sky" id="main-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul>
+          <li>
+            <a href="index.html" class="mobile" aria-label="home"
+              ><i class="fa fa-home"></i
+            ></a>
+            <a href="index.html" class="tablet">Home</a>
+          </li>
+          <li aria-current="page">Indoors</li>
+        </ul>
+      </nav>
+
+      <section class="activities-city-background">
+        <div class="header-cloud">
+          <div class="cloud">
+            <h1>Indoor</h1>
+            <h1>Activities</h1>
+          </div>
+        </div>
+        <div class="container">
+          <article class="card card-selectable">
+            <a href="indoor-jungle.html">
+              <img
+                src="images/indoor-jungle.jpg"
+                alt="A kid climbing through an obstacle course"
+             >
+              <h2>Jungle</h2>
+              <p>
+                A great place for fun, exploration and adventure for active
+                kids.
+              </p></a
+            >
+          </article>
+          <article class="card card-selectable">
+            <a href="indoor-bounce.html">
+              <img
+                src="images/indoor-bounce.jpg"
+                alt="Kids jumping on trampolines"
+             >
+              <h2>Bounce</h2>
+              <p>
+                A fun place where you can bounce around all day on trampolines.
+              </p></a
+            >
+          </article>
+        </div>
+        <article class="wooden-sign">
+          <a href="outdoor.html">
+            <div>
+              <h3>Too nice to be inside?</h3>
+              <p>Check out our</p>
+              <p><span class="underline">Outdoor</span> activities.</p>
+            </div>
+          </a>
+        </article>
+      </section>
+
+      <div class="ground-image container">
+        <img src="images/skeg.png" alt="skateboarder" class="skate-boarder">
+      </div>
+    </main>
+    <footer>
+      <p>© 2022 Bayside Bubble</p>
+      <nav aria-label="footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="outdoor.html">Outdoors</a></li>
+          <li><a href="indoor.html">Indoors</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="javascipt.js"></script>
+  </body>
+</html>
