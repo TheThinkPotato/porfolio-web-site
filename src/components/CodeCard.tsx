@@ -25,7 +25,7 @@ const style: React.CSSProperties = {
 const CodeCard: React.FC<CodeCardProps> = ({ props }) => {
   return (
     <section
-      className="border rounded-lg bg-slate-700 px-4 py-2 shadow-2xl mb-4 mx-auto"
+      className="border rounded-lg bg-slate-700 px-4 py-2 shadow-2xl mb-10 mx-auto"
       style={style}
     >
       <div className="flex flex-col lg:flex-row">
@@ -50,12 +50,13 @@ const CodeCard: React.FC<CodeCardProps> = ({ props }) => {
             ))}
           </div>
         </div>
-
-        <img
-          src={props.image}
-          className="my-auto lg:w-2/5 rounded-lg"
-          alt="Screenshot"
-        />
+        <Link to={props.link} target="_blank" className="my-auto lg:w-2/5">
+            <img
+            src={props.image}
+            className="rounded-lg"
+            alt="Screenshot"
+            />
+        </Link>
         <div className="flex flex-row justify-between flex-wrap mt-4 visible lg:invisible h-auto lg:h-0 lg:w-0">
           {props.tech.map((tech) => (
             <TechIcon key={Math.random()} props={tech} />

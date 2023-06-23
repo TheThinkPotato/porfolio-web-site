@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1920px;
+}
+
+header {
+  max-width: 1920px;
+}
+
+footer {
+  max-width: 1920px;
+  background-color: #456967;
+  background-image: url("../img/footer.jpg");
+  height: 120px;
+}
+
+footer img {
+  max-width: 50px;
+}
+
+.navbar {
+  background-color: #456967;
+  z-index: 10;
+}
+
+.card {
+  position: unset;
+}
+
+.fa-user-circle {
+  font-size: 35px;
+}
+
+nav img {
+  max-width: 50px;
+}
+
+.myband-font {
+  font-family: gooddog-new, sans-serif;
+}
+
+.hero {
+  background-color: #456967;
+  background-image: url("../img/hero.jpg");
+}
+
+.hero p {
+  max-width: 400px;
+}
+
+.figcaption {
+  background-color: rgba(69, 105, 103, 0.7);
+  width: fit-content;
+}
+
+.figcaption a:link {
+  color: white;
+}
+
+.figcaption a:hover {
+  color: black !important;
+  background-color: #d3d4d5;
+}
+
+.figcaption a:visited {
+  color: white;
+}
+
+.card {
+  border: #456967 solid 2px;
+}
+
+.myband-border-color {
+  border: #456967 solid 2px;
+}
+
+.myband-bg-color {
+  background-color: #456967;
+}
+
+.myband-bg-color-light {
+  background-color: #c3e3e2;
+}
+
+.myband-font-light {
+  color: #a9cdcb;
+}
+
+.myband-font-dark {
+  color: #456967;
+}
+
+.myband-font-bright {
+  color: #8e00cb;
+}
+
+.myband-border-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.myband-cell-width-20 {
+  width: 20%;
+}
+
+.myband-cell-width-30 {
+  width: 30%;
+}
+
+.myband-cell-width-70 {
+  width: 70%;
+}
+
+.myband-cell-width-80 {
+  width: 80%;
+}
+
+.myband-band-title {
+  height: 7.1rem;
+}
+
+.myband-band-title h3 {
+  color: #6a275e;
+}
+
+.myband-band-title-edit {
+  height: 16.5rem;
+}
+
+.myband-dropdown-pink {
+  position: unset;
+  z-index: 0;
+  background-color: #efc3e7;
+  color: black;
+  border: #6a275e solid 2px;
+}
+
+.myband-dropdown-pink:hover {
+  background-color: #efc3e7;
+  color: #6a275e;
+}
+
+.myband-btn-purple {
+  background-color: #6a275e;
+  border: black solid 2px;
+  color: white;
+  font-size: 16px;
+}
+
+.myband-btn-purple:hover {
+  background-color: #efc3e7;
+  border: #6a275e solid 2px;
+  color: black;
+}
+
+.myband-btn-pink {
+  background-color: #efc3e7;
+  border: #6a275e solid 2px;
+  color: black;
+  font-size: 16px;
+}
+
+.myband-btn-pink:hover {
+  background-color: #6a275e;
+  border: #efc3e7 solid 2px;
+  color: white;
+  font-size: 16px;
+}
+
+.position-unset {
+  position: unset;
+}
+
+ul .myband-btn-purple {
+  background-color: #efc3e7;
+  border: #6a275e solid 2px;
+  color: black;
+}
+
+.myband-btn-hero {
+  background-color: #6a275e;
+  border: #efc3e7 solid 2px;
+  color: white;
+}
+
+.myband-btn-hero:hover {
+  background-color: #efc3e7;
+  border: #6a275e solid 2px;
+  color: black;
+}
+
+.card .btn-light:hover {
+  background-color: #a9cdcb;
+  border: #456967 solid 2px;
+}
+.user-text {
+  font-weight: 400;
+  text-align: right;
+  width: 7rem;
+}
+
+.sale-status-thumb {
+  margin-top: -1.5rem;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.img-thumbnail-dark {
+  background-color: #212529;
+}

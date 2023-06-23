@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>myBand</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-light">
+    <header class="w-100 position-fixed">
+      <nav class="navbar navbar-expand-lg p-0 top-0">
+        <div class="container-fluid">
+          <a class="navbar-brand d-md-block" href="index.html"
+            ><img src="img/myBand-logo-small.png" alt="myBand logo"
+          /></a>
+
+          <h2 class="text-light text-uppercase">Bookings</h2>
+
+          <div
+            class="d-flex d-inline-block mt-2 mt-lg-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li>
+                <h5 class="text-light pt-2 pt-lg-1 pe-0 me-2 user-text">
+                  User
+                </h5>
+              </li>
+            </ul>
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn btn-light rounded-5 p-0"
+                data-bs-toggle="dropdown"
+                title="User Controls"
+              >
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="edit-event.html"
+                    >Create An Event</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">My Bookings</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Sign In</a></li>
+                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-light">
+      <div class="p-5">
+        <!-- Nav Bar Gap -->
+      </div>
+      <!-- order card -->
+      <article class="container p-3 px-5">
+        <div class="row myband-border-color myband-border-shadow mx-lg-5">
+          <div class="col-md-2 p-0 img-thumbnail-dark">
+            <div class="bg-dark text-light">
+              <div class="py-4 py-lg-4 py-xl-3 py-xxl-1">
+                <img
+                  src="img/band1.jpg"
+                  alt="The Goo Fighters drummer perfroming in a garage."
+                  class="img-fluid w-auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 p-0 myband-bg-color-light">
+            <div class="px-4">
+              <h4 class="ps-2 pt-1">Rock'n On Peel Street</h4>
+
+              <table class="table table-striped bg-white">
+                <thead></thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="myband-cell-width-30 py-0">
+                      Oder ID:
+                    </th>
+                    <td class="myband-cell-width-70 py-0">2183772198</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="myband-cell-width-30 py-0">
+                      Booking Date:
+                    </th>
+                    <td class="myband-cell-width-70 py-0">Mon, 7, October</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="myband-cell-width-30 py-0">
+                      Tickets Amount:
+                    </th>
+                    <td class="myband-cell-width-70 py-0">2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- order card -->
+      <article class="container p-3 px-5">
+        <div class="row myband-border-color myband-border-shadow mx-lg-5">
+          <div class="col-md-2 p-0 img-thumbnail-dark">
+            <div class="bg-dark text-light">
+              <div class="py-4 py-lg-4 py-xl-3 py-xxl-1">
+                <img
+                  src="img/band1.jpg"
+                  alt="The Goo Fighters drummer perfroming in a garage."
+                  class="img-fluid w-auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 p-0 myband-bg-color-light">
+            <div class="px-4">
+              <h4 class="ps-2 pt-1">Rock'n On Peel Street</h4>
+
+              <table class="table table-striped bg-white">
+                <thead></thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="myband-cell-width-30 py-0">
+                      Oder ID:
+                    </th>
+                    <td class="myband-cell-width-70 py-0">2183772198</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="myband-cell-width-30 py-0">
+                      Booking Date:
+                    </th>
+                    <td class="myband-cell-width-70 py-0">Mon, 7, October</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="myband-cell-width-30 py-0">
+                      Tickets Amount:
+                    </th>
+                    <td class="myband-cell-width-70 py-0">2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- order card -->
+      <article class="container p-3 px-5">
+        <div class="row myband-border-color myband-border-shadow mx-lg-5">
+          <div class="col-md-2 p-0 img-thumbnail-dark">
+            <div class="bg-dark text-light">
+              <div class="py-4 py-lg-4 py-xl-3 py-xxl-1">
+                <img
+                  src="img/band1.jpg"
+                  alt="The Goo Fighters drummer perfroming in a garage."
+                  class="img-fluid w-auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 p-0 myband-bg-color-light">
+            <div class="px-4">
+              <h4 class="ps-2 pt-1">Rock'n On Peel Street</h4>
+
+              <table class="table table-striped bg-white">
+                <thead></thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="myband-cell-width-30 py-0">
+                      Oder ID:
+                    </th>
+                    <td class="myband-cell-width-70 py-0">2183772198</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="myband-cell-width-30 py-0">
+                      Booking Date:
+                    </th>
+                    <td class="myband-cell-width-70 py-0">Mon, 7, October</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="myband-cell-width-30 py-0">
+                      Tickets Amount:
+                    </th>
+                    <td class="myband-cell-width-70 py-0">2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="py-4 mt-auto">
+      <div>
+        <ul class="nav float-start">
+          <li class="nav-item">
+            <a href="index.html" class="nav-item text-light p-2 p-sm-3">Home</a>
+          </li>
+          <li>
+            <a href="bookings.html" class="nav-item text-light p-2 p-sm-3"
+              >Bookings</a
+            >
+          </li>
+          <li>
+            <a href="edit-event.html" class="nav-item text-light p-md-3 p-sm-2"
+              >Create Event</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-item text-light p-3">Log In</a>
+          </li>
+          <li>
+            <a href="#" class="nav-item text-light p-md-3 p-sm-2">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav float-end pe-4 d-none d-sm-block">
+        <ul class="nav">
+          <li class="nav-item float-end">
+            <a href="/">
+              <img
+                src="img/myBand-logo-small.png"
+                class="nav-item"
+                alt="myBand logo"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

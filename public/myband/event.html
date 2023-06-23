@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>myBand</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-light">
+    <header class="w-100 position-fixed">
+      <nav class="navbar navbar-expand-lg p-0 top-0">
+        <div class="container-fluid">
+          <a class="navbar-brand d-md-block" href="index.html"
+            ><img src="img/myBand-logo-small.png" alt="myBand logo"
+          /></a>
+
+          <h2 class="text-light text-uppercase text-center">Details</h2>
+
+          <div
+            class="d-flex d-inline-block mt-2 mt-lg-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li>
+                <h5 class="text-light pt-2 pt-lg-1 pe-0 me-2 user-text">
+                  User
+                </h5>
+              </li>
+            </ul>
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn btn-light rounded-5 p-0"
+                data-bs-toggle="dropdown"
+                title="User Controls"
+              >
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="edit-event.html"
+                    >Create An Event</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="edit-event.html">Edit Event</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="bookings.html">Bookings</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Sign In</a></li>
+                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-light">
+      <div class="p-4">
+        <!-- Nav Bar Gap -->
+      </div>
+
+      <section class="container pt-5 pb-4">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-between py-lg-0 pb-md-4 pt-md-0">
+            <div
+              class="mb-3 w-100 text-center img-thumbnail-dark myband-border-color myband-border-shadow"
+            >
+              <div
+                class="border-0 py-xl-4 my-md-2 py-md-5 my-xl-1 my-xxl-0 py-xxl-0 img-thumbnail-dark"
+              >
+                <img
+                  src="img/band1.jpg"
+                  alt="The Goo Fighters drummer perfroming in a garage."
+                  class="img-fluid w-100"
+                />
+              </div>
+            </div>
+
+            <div
+              class="mb-4 mb-lg-0 d-flex align-items-center text-dark text-center myband-bg-color-light myband-border-color myband-border-shadow mt-md-2 mt-lg-2 myband-band-title p-2 p-md-1 p-lg-0"
+            >
+              <div class="col">
+                <h1>Rock'n on Peel Street</h1>
+                <h3>The Goo Fighters</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="text-dark w-100 text-center myband-border-color myband-border-shadow"
+            >
+              <h3 class="text-center mx-4 mt-2">Event Details</h3>
+
+              <div class="mx-3">
+                <h4 class="text-start text-muted">The Artist</h4>
+                <table class="table table-borderless text-start">
+                  <thead></thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="myband-cell-width-20">Artist</th>
+                      <td>The Goo Fighters</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Genre</th>
+                      <td>Rock</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <hr class="mx-5" />
+                <h4 class="text-start text-muted">The Venue</h4>
+                <table class="table table-borderless text-start">
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="myband-cell-width-20">Venue</th>
+                      <td>23 Peel Street, Brisbane, Qld</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Date</th>
+                      <td>Fri, Oct, 21</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Time</th>
+                      <td>9:00 PM</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <hr class="mx-5" />
+                <h4 class="text-start text-muted">Tickets</h4>
+                <table class="table table-borderless text-start">
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="myband-cell-width-20">Price</th>
+                      <td>$2.00 Per-Ticket</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Availability</th>
+                      <td>32 / 32 Tickets Remaining</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Status</th>
+                      <td class="">
+                        <span class="text-bg-success p-1">UPCOMMING</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Event Description -->
+      <section class="container pb-5 px-2">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="text-dark w-100 text-center myband-border-color myband-border-shadow"
+            >
+              <h3 class="pt-2">Event Description</h3>
+              <hr class="mx-5" />
+              <p class="mx-5 text-start">
+                Spend a lovely a firday night kicking back and listening to the
+                Goo Fighters playing some of thier favourite songs and few of
+                thier originals. The Goo Fighters are a Brisbane based band that
+                have been playing together for over 10 years. They have played
+                at many venues around Brisbane and have a large following of
+                fans. Come check them play at the bands garage at 23 Peel
+                Street, Brisbane.
+              </p>
+              <hr class="mx-5" />
+              <button
+                class="btn btn-light btn-sm myband-border-color mb-3 mt-2"
+                type="button"
+                data-bs-toggle="tooltip"
+                title="Sign Up to start booking or creating events."
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Comments -->
+      <section class="container pb-5 px-2">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="text-dark w-100 text-center myband-border-color myband-border-shadow"
+            >
+              <h3 class="pt-2">Comments</h3>
+              <hr class="mx-5 mb-1" />
+              <div>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <p class="text-start mx-5 mb-0 mb-md-1">
+                      User:
+                      <span class="text-muted">Steven@Outlook.com.au</span>
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <p class="text-muted text-start text-md-end mx-5">
+                      Fri, 12, Oct, 2022 7:33 AM
+                    </p>
+                  </div>
+                </div>
+
+                <p class="mx-5 text-start">
+                  Wow, great set last time guys and thanks for the free beer. I
+                  will be back for more.
+                </p>
+              </div>
+              <hr class="mx-5" />
+              <form>
+                <div class="form-group mx-5">
+                  <textarea
+                    class="form-control"
+                    id="new-comment"
+                    rows="2"
+                    placeholder="Leave a comment..."
+                  ></textarea>
+                </div>
+
+                <button
+                  class="btn btn-light btn-sm myband-border-color mb-3 mt-2"
+                  type="button"
+                  data-bs-toggle="tooltip"
+                  title="Sign Up to start booking or creating events."
+                >
+                  Post Comment
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 mt-auto">
+      <div>
+        <ul class="nav float-start">
+          <li class="nav-item">
+            <a href="index.html" class="nav-item text-light p-2 p-sm-3">Home</a>
+          </li>
+          <li>
+            <a href="bookings.html" class="nav-item text-light p-2 p-sm-3"
+              >Bookings</a
+            >
+          </li>
+          <li>
+            <a href="edit-event.html" class="nav-item text-light p-md-3 p-sm-2"
+              >Create Event</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-item text-light p-3">Log In</a>
+          </li>
+          <li>
+            <a href="#" class="nav-item text-light p-md-3 p-sm-2">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav float-end pe-4 d-none d-sm-block">
+        <ul class="nav">
+          <li class="nav-item float-end">
+            <a href="/">
+              <img
+                src="img/myBand-logo-small.png"
+                class="nav-item"
+                alt="myBand logo"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
