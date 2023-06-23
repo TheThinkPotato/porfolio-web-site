@@ -28,8 +28,7 @@ interface CodeCardProps {
   key: number;
 }
 
-const style: React.CSSProperties = {
-  //   width: "480px",
+const style: React.CSSProperties = {  
 };
 
 const CodeCard: React.FC<CodeCardProps> = ({ props }) => {
@@ -39,7 +38,7 @@ const CodeCard: React.FC<CodeCardProps> = ({ props }) => {
       style={style}
     >
       <div className="flex flex-col lg:flex-row">
-        <div className="lg:w-3/5">
+        <div className="lg:w-3/5 mr-auto">
           <p className="mt-1 text-lg font-bold">{props.title}</p>
           <p className="text-neutral-300">{props.subtitle}</p>
           <h3 className="mt-4 text-white font-semibold">Description:</h3>
@@ -73,14 +72,17 @@ const CodeCard: React.FC<CodeCardProps> = ({ props }) => {
             </div>
           )}
 
-          <div className="flex flex-row flex-wrap mt-4 invisible lg:visible h-0 lg:h-auto">
+          <div className="flex flex-row flex-wrap mt-4 invisible lg:visible h-0 lg:h-auto grow">            
             {props.tech.map((tech) => (
               <TechIcon key={Math.random()} props={tech} />
             ))}
           </div>
+        
         </div>
-        <Link to={props.link} target="_blank" className="my-auto lg:w-2/5">
-          <img src={props.image} className="rounded-lg" alt="Screenshot" />
+        <Link to={props.link} target="_blank" className="my-auto">
+          
+          <img src={props.image} className="rounded-lg xl:h-72" alt="Screenshot" />
+          
         </Link>
         <div className="flex flex-row justify-between flex-wrap mt-4 visible lg:invisible h-auto lg:h-0 lg:w-0">
           {props.tech.map((tech) => (
