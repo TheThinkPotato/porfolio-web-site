@@ -14,7 +14,7 @@ const Code: React.FC = () => {
       }}
     >
       <Header />
-      <section className="flex flex-col bg-slate-800 my-5 pb-10 w-5/6 rounded-md">
+      <section className="flex flex-col bg-slate-800 my-5 pb-10 w-11/12 sm:w-5/6 rounded-md">
         <img
           src="images/code.png"
           className="flex w-full rounded-t-md"

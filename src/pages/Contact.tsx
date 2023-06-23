@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
     >
       {/* {squares.map((square) => square)} */}
       <Header />
-      <section className="flex flex-col bg-slate-800 my-5 pb-10 w-5/6 rounded-md">
+      <section className="flex flex-col bg-slate-800 my-5 pb-10 w-11/12 sm:w-5/6 rounded-md">
         <img
           src="images/contact.png"
           className="flex w-full rounded-t-md"

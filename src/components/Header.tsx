@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <section className="flex flex-col md:flex-row pr-0 bg-slate-800 my-5 p-2 rounded-2xl w-5/6 xl:w-2/3">
       <div className="px-5 flex flex-col py-2">
-        <h1 className="text-4xl font-bold text-center">DANIEL LOPEZ</h1>
+        <h1 className="text-4xl font-bold text-center text-red-500">DANIEL LOPEZ</h1>
         <h2 className="text-xl font-bold text-slate-300 text-center">
           Junior Software Developer
         </h2>
@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = () => {
       <nav aria-label="Main" className="grow">
         <ul className="flex flex-col md:flex-row grow justify-around h-full text-center">
           {about === true ? (
-            <li className="text-3xl font-bold flex flex-col justify-center text-red-500 bg-slate-900 md:bg-slate-800 hover:text-blue-400 mx-4">
+            <li className="text-3xl font-bold flex flex-col justify-center text-red-400 bg-slate-900 md:bg-slate-800 hover:text-blue-400 mx-4">
               <Link to="/">About</Link>
             </li>
           ) : (
@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = () => {
             </li>
           )}
           {code === true ? (
-            <li className="text-3xl font-bold flex flex-col justify-center text-red-500 bg-slate-900 md:bg-slate-800 hover:text-blue-400 mx-4">
+            <li className="text-3xl font-bold flex flex-col justify-center text-red-400 bg-slate-900 md:bg-slate-800 hover:text-blue-400 mx-4">
               <Link to="/code">Code</Link>
             </li>
           ) : (
@@ -59,7 +59,7 @@ const Header: React.FC<HeaderProps> = () => {
             </li>
           )}
           {contact === true ? (
-            <li className="text-3xl font-bold flex flex-col justify-center text-red-500 bg-slate-900 md:bg-slate-800 hover:text-blue-400 mx-4">
+            <li className="text-3xl font-bold flex flex-col justify-center text-red-400 bg-slate-900 md:bg-slate-800 hover:text-blue-400 mx-4">
               <Link to="/">Contact</Link>
             </li>
           ) : (

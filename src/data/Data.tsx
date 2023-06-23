@@ -11,7 +11,8 @@ const data = {
       image: "../images/code-offbitWeb.jpg",
       link: "https://offbit.netlify.app/",
       linkDesc: "OFFbit Web Page Link",
-      tech: ["React","MongoDB", "TailWind"],      
+      tech: ["React","MongoDB", "TailWind"],
+      videoLink: "",      
     },
     {
       type: "web",
@@ -22,6 +23,7 @@ const data = {
       link: "https://editor.p5js.org/n10956611/full/2LI5iq9UM",
       linkDesc: "P5JS To The Moon WebLink",
       tech: ["JavaScript", "P5JS"],
+      videoLink: "",
     },
     {
       type: "web",
@@ -32,6 +34,7 @@ const data = {
       link: "/website/index.html",
       linkDesc: "Bayside Bubble WebLink",
       tech: ["HTML", "CSS"],
+      videoLink: "",
     },
     {
       type: "web",
@@ -42,6 +45,7 @@ const data = {
       link: "/myBand/index.html",
       linkDesc: "myBand WebLink",
       tech: ["HTML", "CSS", "BootStrap"],
+      videoLink: "",
     },
     {
       type: "desktop",
@@ -52,6 +56,7 @@ const data = {
       link: "https://github.com/TheThinkPotato/MazeCraft",
       linkDesc: "GitHub Link",
       tech: ["Java","SQL"],
+      videoLink: "https://youtu.be/H6xaq2LXH38",
     },
     {
       type: "desktop",
@@ -62,6 +67,7 @@ const data = {
       link: "https://github.com/TheThinkPotato/CAB201-Assignment-AuctionHouse",
       linkDesc: "GitHub Link",
       tech: ["C#"],
+      videoLink: "",
     },
     {
       type: "desktop",
@@ -72,6 +78,7 @@ const data = {
       link: "https://github.com/TheThinkPotato/IFB104-Choose-Your-News",
       linkDesc: "GitHub Link",
       tech: ["Python","SQL"],
+      videoLink: "",
     },
   ],
 
