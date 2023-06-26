@@ -6,18 +6,14 @@ import { Link } from "react-router-dom";
 const Code: React.FC = () => {
   return (
     <article
-      className=" bg-cyan-700 flex flex-col items-center text-white h-fill content-center "
-      style={{
-        backgroundImage: "url('images/code2.jpg')",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-      }}
+      className=" bg-slate-950 flex flex-col items-center text-white h-fill content-center "
     >
       <Header />
-      <section className="flex flex-col bg-slate-800 my-5 pb-10 w-11/12 sm:w-5/6 rounded-md">
+      <section className="flex flex-col bg-slate-800 pb-10 w-full"
+      style={{maxWidth: "1440px",}}>
         <img
           src="images/code.png"
-          className="flex w-full rounded-t-md"
+          className="flex w-full"
           alt="Daniel Lopez"
         />
 

@@ -42,7 +42,7 @@ const CodeCard: React.FC<CodeCardProps> = ({ props }) => {
           <p className="mt-1 text-lg font-bold">{props.title}</p>
           <p className="text-neutral-300">{props.subtitle}</p>
           <h3 className="mt-4 text-white font-semibold">Description:</h3>
-          <p className="text-neutral-300 mb-4 md:w-4/5">{props.description}</p>
+          <p className="text-neutral-300 mb-4 md:w-4/5 mr-1">{props.description}</p>
 
           <p className="mt-4 text-white font-semibold">{props.linkDesc}:</p>
           <Link

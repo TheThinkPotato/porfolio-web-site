@@ -40,7 +40,7 @@ const data = {
       type: "web",
       title: "myBand",
       subtitle: "Web page for small bands to host events",
-      description: "A web site designed for small bands to host events and sell tickets to their fans.",
+      description: "A web site template designed for small bands to host events and sell tickets to their fans.",
       image: "../images/code-myband.jpg",
       link: "/myBand/index.html",
       linkDesc: "myBand WebLink",

@@ -31,44 +31,49 @@ const Header: React.FC<HeaderProps> = () => {
   }, [about, code, contact, location.pathname, pathRoute]);
 
   return (
-    <section className="flex flex-col md:flex-row pr-0 bg-slate-800 my-5 p-2 rounded-2xl w-5/6 xl:w-2/3">
-      <div className="px-5 flex flex-col py-2">
-        <h1 className="text-4xl font-bold text-center text-red-500">DANIEL LOPEZ</h1>
-        <h2 className="text-xl font-bold text-slate-300 text-center">
-          Junior Software Developer
-        </h2>
+    <section className="bg-slate-500 pb-8 md:pb-4 pt-4 w-full">
+      <div className="flex flex-col md:flex-row md:w-11/12 mx-auto w-full" style={{maxWidth:"1440px"}}>
+        <div className="px-5 flex flex-col py-2 hover:text-blue-200">
+          <Link to="/">
+            <h1 className="text-4xl font-bold text-center">DANIEL LOPEZ</h1>
+            <h2 className="text-xl font-bold text-slate-300 text-center">
+              Junior Software Developer
+            </h2>
+          </Link>
+        </div>
+
+        <nav aria-label="Main" className="grow">
+          <ul className="flex flex-col md:flex-row grow justify-around h-full text-center">
+            {about === true ? (
+              <li className="text-3xl font-bold flex flex-col justify-center text-slate-100 md:text-slate-200 bg-slate-900 md:bg-inherit hover:text-blue-200 mx-4">
+                <Link to="/">About</Link>
+              </li>
+            ) : (
+              <li className="text-3xl font-bold flex flex-col justify-center hover:text-blue-200 mx-4 md:text-slate-900">
+                <Link to="/">About</Link>
+              </li>
+            )}
+            {code === true ? (
+              <li className="text-3xl font-bold flex flex-col justify-center text-slate-200 bg-slate-900 md:bg-inherit hover:text-blue-200 mx-4">
+                <Link to="/code">Code</Link>
+              </li>
+            ) : (
+              <li className="text-3xl font-bold flex flex-col justify-center hover:text-blue-200 mx-4 md:text-slate-900">
+                <Link to="/code">Code</Link>
+              </li>
+            )}
+            {contact === true ? (
+              <li className="text-3xl font-bold flex flex-col justify-center text-slate-200 bg-slate-900 md:bg-inherit hover:text-blue-200 mx-4">
+                <Link to="/">Contact</Link>
+              </li>
+            ) : (
+              <li className="text-3xl font-bold flex flex-col justify-center hover:text-blue-200 mx-4 md:text-slate-900">
+                <Link to="/contact">Contact</Link>
+              </li>
+            )}
+          </ul>
+        </nav>
       </div>
-      <nav aria-label="Main" className="grow">
-        <ul className="flex flex-col md:flex-row grow justify-around h-full text-center">
-          {about === true ? (
-            <li className="text-3xl font-bold flex flex-col justify-center text-red-400 bg-slate-900 md:bg-slate-800 hover:text-blue-400 mx-4">
-              <Link to="/">About</Link>
-            </li>
-          ) : (
-            <li className="text-3xl font-bold flex flex-col justify-center hover:text-blue-400 mx-4">
-              <Link to="/">About</Link>
-            </li>
-          )}
-          {code === true ? (
-            <li className="text-3xl font-bold flex flex-col justify-center text-red-400 bg-slate-900 md:bg-slate-800 hover:text-blue-400 mx-4">
-              <Link to="/code">Code</Link>
-            </li>
-          ) : (
-            <li className="text-3xl font-bold flex flex-col justify-center hover:text-blue-400 mx-4">
-              <Link to="/code">Code</Link>
-            </li>
-          )}
-          {contact === true ? (
-            <li className="text-3xl font-bold flex flex-col justify-center text-red-400 bg-slate-900 md:bg-slate-800 hover:text-blue-400 mx-4">
-              <Link to="/">Contact</Link>
-            </li>
-          ) : (
-            <li className="text-3xl font-bold flex flex-col justify-center hover:text-blue-400 mx-4">
-              <Link to="/contact">Contact</Link>
-            </li>
-          )}
-        </ul>
-      </nav>
     </section>
   );
 };

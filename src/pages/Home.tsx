@@ -8,32 +8,30 @@ import data from "../data/Data";
 const Home: React.FC = () => {
   return (
     <article
-      className=" bg-cyan-700 flex flex-col items-center text-white h-fill content-center "
-      style={{
-        backgroundImage: "url('images/code2.jpg')",
-        backgroundSize: "cover",
-        // backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-      }}
+      className="bg-slate-950 flex flex-col items-center text-white content-center w-fill"      
     >
       {/* {squares.map((square) => square)} */}
       <Header />
-      <section className="flex flex-col bg-slate-800 my-5 pb-10 w-11/12 sm:w-5/6 rounded-md">
+      <section className="flex flex-col bg-slate-800 pb-10 w-full"
+      style={{maxWidth: "1440px",}}>
         <img
           src="images/me.jpg"
-          className="flex w-full rounded-t-md"
+          className="flex w-full"
           alt="Daniel Lopez"
         />
-        <div className="px-10 py-2 bg-slate-700">
-          <h2 className="text-2xl text-center font-bold">» Junior Software Developer «</h2>
-          <p className="my-4 text-justify text-neutral-200">
-            Hello, I'm Daniel Lopez, a junior software developer located in
-            Brisbane, Australia. I have a strong attention to detail and a
-            passion for all things technical, ranging from software development
-            to hardware and electronics. With experience in React JS,
-            TypeScript, Figma, Node.js, C#, Express, and AWS Cloud, I enjoy
-            working with a diverse set of technologies to bring ideas to life.
-          </p>
+        <div className="px-2 sm:px-10 py-2 bg-slate-700">
+          <h2 className="text-2xl text-center font-semibold sm:font-bold">» Junior Software Developer «</h2>
+          {/* <div className="flex flex-row"> */}
+          {/* <img src="../images/headerguy.png" alt="Tired Programmer" className="md:mr-6 mb-2 self-center invisible h-0 w-0 md:w-20 md:h-20 md:visible"/> */}
+            <p className="my-4 text-justify text-neutral-200">
+              Hello, I'm Daniel Lopez, a junior software developer located in
+              Brisbane, Australia. I have a strong attention to detail and a
+              passion for all things technical, ranging from software development
+              to hardware and electronics. With experience in React JS,
+              TypeScript, Figma, Node.js, C#, Express, and AWS Cloud, I enjoy
+              working with a diverse set of technologies to bring ideas to life.
+            </p>
+          {/* </div> */}
         </div>
 
         <div className="">
