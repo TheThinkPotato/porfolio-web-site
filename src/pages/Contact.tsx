@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Contact: React.FC = () => {
   return (
     <article
-      className=" bg-slate-950 flex flex-col items-center text-white h-screen content-center "
+      className=" bg-slate-800 flex flex-col items-center text-white h-screen content-center "
     >
       {/* {squares.map((square) => square)} */}
       <Header />

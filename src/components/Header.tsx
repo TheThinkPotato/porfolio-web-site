@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = () => {
           <Link to="/">
             <h1 className="text-4xl font-bold text-center">DANIEL LOPEZ</h1>
             <h2 className="text-xl font-bold text-slate-300 text-center">
-              Junior Software Developer
+              Web Software Developer
             </h2>
           </Link>
         </div>
