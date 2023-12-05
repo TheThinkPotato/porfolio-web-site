@@ -17,8 +17,8 @@ const Home: React.FC = () => {
         style={{ maxWidth: "1440px", }}>
         <img
           src="images/me.png"
-          className="flex w-full"
-          alt="Daniel Lopez"
+          className="h-56 md:h-auto w-full object-cover"
+          alt="Lego Man Coding"
         />
         <div className="px-2 sm:px-10 md:my-8 py-5 md:py-2">
           <h2 className="text-2xl text-center font-semibold sm:font-bold">» Who Am I «</h2>

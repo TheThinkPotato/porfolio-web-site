@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
         style={{ maxWidth: "1440px", }}>
         <img
           src="images/contact.png"
-          className="flex w-full"
+          className="h-56 md:h-auto w-full object-cover"
           alt="Daniel Lopez"
         />
 
