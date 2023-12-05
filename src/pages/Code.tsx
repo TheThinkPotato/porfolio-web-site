@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import data from "../data/Data";
 import CodeCard from "../components/CodeCard";
 import { Link } from "react-router-dom";
@@ -10,7 +11,7 @@ const Code: React.FC = () => {
     >
       <Header />
       <section className="flex flex-col bg-slate-800 pb-10 w-full"
-      style={{maxWidth: "1440px",}}>
+        style={{ maxWidth: "1440px", }}>
         <img
           src="images/code.png"
           className="flex w-full"
@@ -43,6 +44,7 @@ const Code: React.FC = () => {
           </article>
         </div>
       </section>
+      <Footer />
     </article>
   );
 };

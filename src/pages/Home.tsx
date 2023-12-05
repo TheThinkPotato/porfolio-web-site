@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import EducationCard from "../components/CardEducation";
 import SkillCard from "../components/SkillCard";
 import ExperienceCard from "../components/ExperienceCard";
@@ -67,6 +68,7 @@ const Home: React.FC = () => {
           </article>
         </div>
       </section>
+      <Footer/>
     </article>
   );
 };
