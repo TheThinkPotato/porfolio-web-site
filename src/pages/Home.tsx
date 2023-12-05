@@ -12,15 +12,15 @@ const Home: React.FC = () => {
     >
       {/* {squares.map((square) => square)} */}
       <Header />
-      <section className="flex flex-col bg-slate-800 pb-10 w-full"
+      <section className="flex flex-col pb-10 w-full"
       style={{maxWidth: "1440px",}}>
         <img
-          src="images/me.jpg"
+          src="images/me.png"
           className="flex w-full"
           alt="Daniel Lopez"
         />
-        <div className="px-2 sm:px-10 my-8 py-2 bg-slate-800">
-          <h2 className="text-2xl text-center font-semibold sm:font-bold">» Web Software Developer «</h2>
+        <div className="px-2 sm:px-10 my-8 py-2">
+          <h2 className="text-2xl text-center font-semibold sm:font-bold">» Who Am I «</h2>
           {/* <div className="flex flex-row"> */}
           {/* <img src="../images/headerguy.png" alt="Tired Programmer" className="md:mr-6 mb-2 self-center invisible h-0 w-0 md:w-20 md:h-20 md:visible"/> */}
             <p className="my-4 text-justify text-neutral-200">
@@ -34,9 +34,9 @@ const Home: React.FC = () => {
           {/* </div> */}
         </div>
 
-        <div className="">
-          <article className="py-2 bg-slate-500 shadow-xl">
-            <h2 className="text-2xl font-bold mb-5 mx-10 text-center">Skills</h2>
+        <div className="bg-blue-900 pb-10">
+          <article className="py-2 bg-blue-500 shadow-xl">
+            <h2 className="text-3xl font-bold mb-5 mx-10 text-center">Skills</h2>
             <div className="flex flex-wrap justify-between">
               {data.skills.map((skills) => (
                 <SkillCard key={Math.random()} props={skills} />
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
           </article>
 
           <article className="mt-16">
-            <h2 className="text-2xl font-bold mb-16 mx-10 text-center">Education</h2>
+            <h2 className="text-3xl font-bold mb-16 mx-10 text-center">Education</h2>
             <div className="flex flex-wrap justify-between mx-4 2xl:mx-20">
               {data.education.map((education) => (
                 <EducationCard key={Math.random()} props={education} />
@@ -54,7 +54,7 @@ const Home: React.FC = () => {
           </article>
 
           <article className="mt-16">
-            <h2 className="text-2xl font-bold mb-16 mx-10 text-center">Experience</h2>
+            <h2 className="text-3xl font-bold mb-16 mx-10 text-center">Experience</h2>
             <div className="flex flex-wrap justify-between mx-4 2xl:mx-20">
               {data.experience.map((experience) => (
                 <ExperienceCard key={Math.random()} props={experience} />

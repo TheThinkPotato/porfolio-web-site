@@ -34,7 +34,7 @@ const style: React.CSSProperties = {
 const CodeCard: React.FC<CodeCardProps> = ({ props }) => {
   return (
     <section
-      className="border rounded-lg bg-slate-700 px-4 py-2 shadow-2xl mb-10 mx-auto"
+      className="border rounded-lg bg-gray-800 px-4 py-2 shadow-2xl mb-10 mx-auto"
       style={style}
     >
       <div className="flex flex-col lg:flex-row">

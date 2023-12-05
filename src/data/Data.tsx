@@ -97,7 +97,7 @@ const data = {
       title: "Bachelors of Computer Science",
       subtitle: "Queensland University of Technology",
       image: "../images/qut-logo.png",
-      gpa: "GPA 6.875",
+      gpa: "GPA 6.917",
       date: "2023",
       major: "Computer Science Major",
       minor1: "Interaction Design Minor",
