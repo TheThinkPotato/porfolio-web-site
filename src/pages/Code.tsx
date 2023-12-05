@@ -17,7 +17,7 @@ const Code: React.FC = () => {
           alt="Daniel Lopez"
         />
 
-        <div className="bg-blue-500">
+        <div className="bg-blue-800">
           <article className="bg-slate-800 py-5 md:py-10">
             <h2 className="text-3xl font-bold text-center">Code &lt;/&gt;</h2>
           </article>
