@@ -22,7 +22,7 @@ const Code: React.FC = () => {
             <h2 className="text-3xl font-bold text-center">Code &lt;/&gt;</h2>
           </article>
 
-          <article className="mt-16 mx-4 sm:mx-10">
+          <article className="mt-6 mx-4 sm:mx-10">
             <h2 className="text-3xl font-bold mb-6 mx-10 text-center">Web</h2>
             {data.code.map((code) => {
               if (code.type === "web") {
