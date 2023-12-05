@@ -20,7 +20,7 @@ const style: React.CSSProperties = {
 const ExperienceCard: React.FC<ExpProps> = ({ props }) => {
   return (
     <section
-    className="border rounded-lg bg-slate-700 px-4 py-2 shadow-2xl mb-4 mx-auto"
+    className="border rounded-lg bg-blue-950 px-4 py-2 shadow-2xl mb-4 mx-auto"
     style={style}
   >
     <div className="flex flex-row mb-4">

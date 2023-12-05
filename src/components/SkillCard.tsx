@@ -18,7 +18,7 @@ const style: React.CSSProperties = {
 const SkillCard: React.FC<SkillProps> = ({ props }) => {
   return (
     <section
-      className="flex border rounded-lg bg-slate-700 mx-auto shadow-xl mb-4 p-1 justify-center"      
+      className="flex border rounded-lg bg-blue-950 mx-auto shadow-xl mb-4 p-1 justify-center"      
       style={style}
     >
       <div className="flex flex-col">
