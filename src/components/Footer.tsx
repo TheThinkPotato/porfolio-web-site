@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 interface FooterProps { }
@@ -32,17 +32,19 @@ const Footer: React.FC<FooterProps> = () => {
                             </Link>
                         </ul>
                     </nav>
-                    <div className="grow justify-end mr-5 hidden 2md:flex">
-                        <img src="/images/logo-footer.png" alt="OFFbit logo" />
+                    <div className="grow justify-end mr-5 hidden md:flex">
+                        <img src="images/logo.jpg" alt="logo" />
                     </div>
                 </div>
-                {/* <div className="flex justify-center mt-8 2md:hidden">
-                    <img src="/images/logo-footer.png" alt="OFFbit logo" />
-                </div> */}
-                
+                <div className="flex justify-center mt-8 md:hidden">
+                    <img
+                        src="images/logo.jpg"
+                        alt="logo" />
+                </div>
+
                 <p className="my-10 text-stone-500 mx-auto w-11/12">
-                    Website crafted by Daniel Lopez using React and TypeScript. If you seek a dedicated software developer with a passion for all things tech, let's 
-                    <Link to="/contact" className="underline hover:text-amber-400 ml-1">connect. </Link>                    
+                    Website crafted by Daniel Lopez using React and TypeScript. If you seek a dedicated software developer with a passion for all things tech, let's
+                    <Link to="/contact" className="underline hover:text-amber-400 ml-1">connect. </Link>
                 </p>
 
             </div>
