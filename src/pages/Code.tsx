@@ -18,12 +18,12 @@ const Code: React.FC = () => {
         />
 
         <div className="bg-blue-500">
-          <article className="bg-slate-800 py-10">
+          <article className="bg-slate-800 py-5 md:py-10">
             <h2 className="text-3xl font-bold text-center">Code &lt;/&gt;</h2>
           </article>
 
           <article className="mt-16 mx-4 sm:mx-10">
-            <h2 className="text-3xl font-bold mb-16 mx-10 text-center">Web</h2>
+            <h2 className="text-3xl font-bold mb-6 mx-10 text-center">Web</h2>
             {data.code.map((code) => {
               if (code.type === "web") {
                 return <CodeCard key={Math.random()} props={code} />;
@@ -31,7 +31,7 @@ const Code: React.FC = () => {
               return null;
             })}
 
-            <h2 className="text-3xl font-bold mt-32 mb-16 mx-10 text-center">
+            <h2 className="text-3xl font-bold mt-32 mb-6 mx-10 text-center">
               Desktop
             </h2>
             {data.code.map((code) => {

@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
         />
 
         <div className="bg-blue-800">
-          <article className="py-10 bg-slate-800">
+          <article className="py-5 md:py-10 bg-slate-800">
             <h2 className="text-3xl font-bold text-center"> « Contact Me »</h2>                
           </article>
 
