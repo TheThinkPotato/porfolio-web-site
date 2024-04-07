@@ -156,9 +156,25 @@ const data = {
   ],
   experience: [
     {
+      company: "Patient Zero",
+      position: "Software Developer",
+      date: "2024 to Now",
+      image: "../images/pz-logo.png",
+      description:
+        "Software developer for The Learning Dashboard App using React-JS, Type Script, ASP.Net and Azure Cloud Services.",
+    },
+    {
+      company: "Leap in!",
+      position: "Capstone Team Lead and Developer",
+      date: "2023",
+      image: "../images/leap-in-logo.png",
+      description:
+        "Lead a team of Developers to extended a React Native application for Web, Iphone, Android Environments.",
+    },
+    {
       company: "SJP Access",
       position: "Drafter & Commissioning Tech",
-      date: "2015 to Now",
+      date: "2015 to 2015",
       image: "../images/sjp-logo.png",
       description:
         "Drafting and commissioning of access control systems and CCTV systems. Responsible for the company's IT system.",
