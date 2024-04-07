@@ -174,7 +174,7 @@ const data = {
     {
       company: "SJP Access",
       position: "Drafter & Commissioning Tech",
-      date: "2015 to 2015",
+      date: "2015 to 2023",
       image: "../images/sjp-logo.png",
       description:
         "Drafting and commissioning of access control systems and CCTV systems. Responsible for the company's IT system.",
