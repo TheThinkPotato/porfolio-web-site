@@ -9,7 +9,6 @@ import React from "react";
 const Home: React.FC = () => {
   return (
     <article className="bg-slate-800 flex flex-col items-center text-white content-center w-fill">
-      {/* {squares.map((square) => square)} */}
       <Header />
       <section
         className="flex flex-col pb-10 w-full"
@@ -24,8 +23,6 @@ const Home: React.FC = () => {
           <h2 className="text-2xl text-center font-semibold sm:font-bold">
             » Who Am I «
           </h2>
-          {/* <div className="flex flex-row"> */}
-          {/* <img src="../images/headerguy.png" alt="Tired Programmer" className="md:mr-6 mb-2 self-center invisible h-0 w-0 md:w-20 md:h-20 md:visible"/> */}
           <p className="px-4 md:px-0 my-4 text-justify text-neutral-200">
             Originating from an electronics background driven by my fascination
             with computer hardware, I seamlessly transitioned into software
@@ -40,7 +37,6 @@ const Home: React.FC = () => {
             software development. This shift merges my skills and passion,
             empowering me to create real-world software solutions.
           </p>
-          {/* </div> */}
         </div>
 
         <div className="bg-blue-900 pb-10">

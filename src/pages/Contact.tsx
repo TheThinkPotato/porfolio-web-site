@@ -7,7 +7,6 @@ const Contact: React.FC = () => {
     <article
       className=" bg-slate-800 flex flex-col items-center text-white h-screen content-center "
     >
-      {/* {squares.map((square) => square)} */}
       <Header />
       <section className="flex flex-col bg-slate-800 pb-10 w-full"
         style={{ maxWidth: "1440px", }}>
