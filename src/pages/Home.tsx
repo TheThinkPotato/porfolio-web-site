@@ -24,18 +24,24 @@ const Home: React.FC = () => {
             » Who Am I «
           </h2>
           <p className="px-4 md:px-0 my-4 text-justify text-neutral-200">
-            Originating from an electronics background driven by my fascination
-            with computer hardware, I seamlessly transitioned into software
-            development, inspired by my love for design and critical thinking.
-            The pandemic disruption provided an opportune moment to pursue my
-            passion for software development.
+            I am a dedicated Web Application Software Developer with a passion
+            for creating efficient and effective solutions. My expertise lies in
+            utilising modern technologies such as React, JavaScript, TypeScript,
+            C#, and .NET Entity Framework. I adhere to Domain-Driven Design
+            principles to ensure my applications are robust and scalable.
           </p>
           <p className="px-4 md:px-0 my-4 text-justify">
-            My diverse experiences sharpened my ownership, communication, and
-            leadership skills, enabling me to lead my teams to success. Eager to
-            learn and fueled by creativity, I thrive in the complexities of
-            software development. This shift merges my skills and passion,
-            empowering me to create real-world software solutions.
+            For testing, I rely on tools like Jest and Cypress to maintain the
+            highest standards of quality in my software. Additionally, I
+            prioritise web accessibility and ensure compliance with WCAG 2.2
+            guidelines to create inclusive user experiences. I also specialise
+            in responsive web application design for desktop, tablet, and mobile
+            devices to provide a seamless experience across all platforms.
+          </p>
+          <p className="px-4 md:px-0 my-4 text-justify">
+            Currently, I am working on a school-based app for private schools in
+            my role at Patient Zero. This project has allowed me to leverage and
+            extend my skills, as well as contribute to an impactful application.
           </p>
         </div>
 
@@ -72,7 +78,6 @@ const Home: React.FC = () => {
               ))}
             </div>
           </article>
-
         </div>
       </section>
       <Footer />
