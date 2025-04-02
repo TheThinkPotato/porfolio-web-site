@@ -3,14 +3,14 @@ import Footer from "../components/Footer";
 import data from "../data/Data";
 import CodeCard from "../components/CodeCard";
 
-const Code: React.FC = () => {
+const Code = () => {
   return (
-    <article
-      className=" bg-slate-800 flex flex-col items-center text-white h-fill content-center "
-    >
+    <article className=" bg-slate-800 flex flex-col items-center text-white h-fill content-center ">
       <Header />
-      <section className="flex flex-col bg-slate-800 pb-10 w-full"
-        style={{ maxWidth: "1440px", }}>
+      <section
+        className="flex flex-col bg-slate-800 pb-10 w-full"
+        style={{ maxWidth: "1440px" }}
+      >
         <img
           src="images/code.png"
           className="h-56 md:h-auto w-full object-cover"

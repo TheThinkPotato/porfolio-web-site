@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Skill {
   title: string;
   image: string;
@@ -10,25 +8,21 @@ interface SkillProps {
   key: number;
 }
 
-const style: React.CSSProperties = {
+const style = {
   width: "100px",
-  height: "124px",  
+  height: "124px",
 };
 
-const SkillCard: React.FC<SkillProps> = ({ props }) => {
+const SkillCard = ({ props }: SkillProps) => {
   return (
     <section
-      className="flex border rounded-lg bg-blue-950 mx-auto shadow-xl mb-4 p-1 justify-center"      
+      className="flex border rounded-lg bg-blue-950 mx-auto shadow-xl mb-4 p-1 justify-center"
       style={style}
     >
-      <div className="flex flex-col">
-        <img
-          src={props.image}
-          className="rounded-lg grow h-20"
-          alt="Logo"
-        />              
-      <p className="text-center">{props.title}</p>
-    </div>
+      <div className="flex flex-col transform transition-transform duration-300 hover:scale-110">
+        <img src={props.image} className="rounded-lg grow h-20" alt="Logo" />
+        <p className="text-center">{props.title}</p>
+      </div>
     </section>
   );
 };

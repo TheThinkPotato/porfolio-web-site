@@ -2,9 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
-interface HeaderProps { }
-
-const Header: React.FC<HeaderProps> = () => {
+const Header = () => {
   const location = useLocation();
   let pathRoute = location.pathname;
   pathRoute = pathRoute.split("/")[1];
@@ -32,13 +30,16 @@ const Header: React.FC<HeaderProps> = () => {
 
   return (
     <section className="pb-2 md:pb-4 pt-4 w-full bg-blue-600">
-      <div className="flex flex-col md:flex-row md:w-11/12 mx-auto w-full" style={{ maxWidth: "1440px" }}>
-        <div className="px-5 flex flex-col py-2 text-amber-200 hover:text-amber-400">
+      <div
+        className="flex flex-col md:flex-row md:w-11/12 mx-auto w-full"
+        style={{ maxWidth: "1440px" }}
+      >
+        <div className="px-5 flex flex-col py-2 text-amber-400 hover:text-amber-300">
           <Link to="/">
             <h1 className="text-4xl font-bold text-center">DANIEL LOPEZ</h1>
-            <div className="flex flex-row justify-center text-xl font-bold text-blue-50 text-center hover:text-amber-200">
-              <h2 className="mr-5">
-                S o f t w a r e</h2><h2>D e v e l o p e r</h2>
+            <div className="flex flex-row justify-center text-xl font-bold text-orange-300 text-center hover:text-amber-200">
+              <h2 className="mr-5">S o f t w a r e</h2>
+              <h2>D e v e l o p e r</h2>
             </div>
           </Link>
         </div>
@@ -75,7 +76,7 @@ const Header: React.FC<HeaderProps> = () => {
           </ul>
         </nav>
       </div>
-    </section >
+    </section>
   );
 };
 
