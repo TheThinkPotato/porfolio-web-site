@@ -101,7 +101,7 @@ const CodeCard = ({ props }: CodeCardProps) => {
           </div>
         </div>
         <Link
-          to={props.link != "" ? props.link : props.gitHubLink}
+          to={props.link !== "" ? props.link : props.gitHubLink}
           target="_blank"
           className="my-auto"
         >
