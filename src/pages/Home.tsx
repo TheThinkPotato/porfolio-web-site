@@ -4,6 +4,7 @@ import EducationCard from "../components/CardEducation";
 import SkillCard from "../components/SkillCard";
 import ExperienceCard from "../components/ExperienceCard";
 import data from "../data/Data";
+import CertificationCard from "../components/CertificationCard";
 
 const Home = () => {
   return (
@@ -23,14 +24,14 @@ const Home = () => {
             » Who Am I «
           </h2>
           <p className="px-4 md:px-0 my-4 text-justify text-neutral-200">
-            I’m a Web Application Developer passionate about building efficient
-            solutions using React, TypeScript, C#, and .NET Entity Framework.
-            I ensure quality with Jest and Cypress, prioritize accessibility
-            (WCAG 2.2), and design responsive web apps for all devices.
+          I’m a full stack developer passionate about building modern, efficient, and  
+          user-focused web applications. With over two years of experience in professional 
+          software development and a strong academic foundation, I bring creativity, 
+          problem-solving, and accountability. 
           </p>
           <p className="px-4 md:px-0 my-4 text-justify">
-            In my work at Patient Zero, I’m developing a private school application, expanding my
-            skills while contributing to a meaningful project.
+          I enjoy collaborating in teams to deliver 
+          scalable and reliable solutions — combining C#, .NET, and React expertise.
           </p>
         </div>
 
@@ -39,14 +40,25 @@ const Home = () => {
             <h2 className="text-3xl font-bold mb-5 mx-10 text-center">
               Skills
             </h2>
-            <div className="flex flex-wrap justify-between">
+            <div className="flex flex-wrap justify-between gap-2">
               {data.skills.map((skills) => (
                 <SkillCard key={Math.random()} props={skills} />
               ))}
             </div>
           </article>
 
-          <article className="mt-16">
+          <article className="pt-2 mx-auto bg-blue-400 pb-2">
+            <h2 className="text-3xl font-bold mb-10 mx-10 text-center">
+              Certifications
+            </h2>
+            <div className="flex flex-wrap justify-center w-full md:w-1/3 mx-auto">
+              {data.certifications.map((certification) => (
+                <CertificationCard key={Math.random()} props={certification} />
+              ))}
+            </div>
+          </article>
+
+          <article className="mt-6">
             <h2 className="text-3xl font-bold mb-10 mx-10 text-center">
               Experience
             </h2>

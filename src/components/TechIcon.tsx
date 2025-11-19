@@ -27,7 +27,7 @@ interface TechProps {
 
 const TechIcon = ({ props, size = 10 }: TechProps) => {
   const techIconStyle =
-    "rounded-sm hover:scale-110 transition-transform duration-200";
+    "rounded-sm hover:scale-110 transition-transform duration-200 w-16 h-16 md:w-10 md:h-10";
 
   return (
     <div

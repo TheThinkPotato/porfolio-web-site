@@ -10,7 +10,15 @@ const data = {
       link: "http://parakeet.freeddns.org:888",
       linkDesc: "Minecraft Bedrock Server Map Webpage Link",
       gitHubLink: "https://github.com/TheThinkPotato/BedrockSvrLog",
-      tech: ["React","TypeScript", "TailWind","C#","JavaScript","SQLite", "EntityFramework"],
+      tech: [
+        "React",
+        "TypeScript",
+        "TailWind",
+        "C#",
+        "JavaScript",
+        "SQLite",
+        "EntityFramework",
+      ],
       videoLink: "",
     },
     {
@@ -61,10 +69,11 @@ const data = {
       image: "../images/code-porfolio.jpg",
       link: "https://daniellopez.netlify.app/",
       linkDesc: "Open this web site up again",
-      gitHubLink: "https://github.com/TheThinkPotato/porfolio-web-site/settings",
+      gitHubLink:
+        "https://github.com/TheThinkPotato/porfolio-web-site/settings",
       tech: ["React", "TypeScript", "TailWind"],
       videoLink: "",
-    },    
+    },
     {
       type: "web",
       title: "To The Moon",
@@ -126,7 +135,8 @@ const data = {
       image: "../images/code-auction.jpg",
       link: "",
       linkDesc: "",
-      gitHubLink: "https://github.com/TheThinkPotato/CAB201-Assignment-AuctionHouse",
+      gitHubLink:
+        "https://github.com/TheThinkPotato/CAB201-Assignment-AuctionHouse",
       tech: ["C#"],
       videoLink: "",
     },
@@ -142,6 +152,21 @@ const data = {
       gitHubLink: "https://github.com/TheThinkPotato/IFB104-Choose-Your-News",
       tech: ["Python", "SQL"],
       videoLink: "",
+    },
+  ],
+
+  certifications: [
+    {
+      title: "AZ-900",
+      image: "../images/az900-cert.png",
+      description: "Azure Fundamentals Certification",
+      link: "https://learn.microsoft.com/api/credentials/share/en-us/DanielLopez-4615/209E059ADEBEF2BF?sharingId=60B6F69F13DE90C6",
+    },
+    {
+      title: "W3Cx",
+      image: "../images/w3c-cert.png",
+      description: "Introduction to Web Development Accessibility",
+      link: "https://courses.edx.org/certificates/6321d574145d4362a60fe8f6098bab89",
     },
   ],
 
