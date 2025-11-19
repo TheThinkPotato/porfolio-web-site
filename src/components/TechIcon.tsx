@@ -1,3 +1,5 @@
+import Tooltip from "./Tooltip";
+
 const techIcon = {
   React: "../images/react-logo.svg",
   TailWind: "../images/tailwind-logo.svg",
@@ -14,6 +16,8 @@ const techIcon = {
   HTML: "../images/html-logo.svg",
   BootStrap: "../images/bootstrap-logo.svg",
   Docker: "../images/docker-logo.svg",
+  SQLite: "../images/sqlite-logo.svg",
+  EntityFramework: "../images/ef-logo.png",
 };
 interface TechProps {
   props: string;
@@ -33,103 +37,163 @@ const TechIcon = ({ props, size = 10 }: TechProps) => {
         switch (props) {
           case "React":
             return (
-              <>
+              <Tooltip text="React JS">
                 <img
                   src={techIcon.React}
                   alt={props}
                   className={techIconStyle}
                 />
-              </>
+              </Tooltip>
             );
           case "MongoDB":
             return (
-              <img
-                src={techIcon.MongoDB}
-                alt={props}
-                className={techIconStyle}
-              />
+              <Tooltip text="Mongo DB">
+                <img
+                  src={techIcon.MongoDB}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
             );
           case "TailWind":
             return (
-              <img
-                src={techIcon.TailWind}
-                alt={props}
-                className={techIconStyle}
-              />
+              <Tooltip text="Tail Wind">
+                <img
+                  src={techIcon.TailWind}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
             );
           case "TypeScript":
             return (
-              <img
-                src={techIcon.TypeScript}
-                alt={props}
-                className={techIconStyle}
-              />
+              <Tooltip text="Type Script">
+                <img
+                  src={techIcon.TypeScript}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
             );
           case "JavaScript":
             return (
-              <img
-                src={techIcon.JavaScript}
-                alt={props}
-                className={techIconStyle}
-              />
+              <Tooltip text="Java Script">
+                <img
+                  src={techIcon.JavaScript}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
             );
 
           case "Python":
             return (
-              <img
-                src={techIcon.Python}
-                alt={props}
-                className={techIconStyle}
-              />
+              <Tooltip text="Python">
+                <img
+                  src={techIcon.Python}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
             );
           case "P5JS":
             return (
-              <img src={techIcon.P5JS} alt={props} className={techIconStyle} />
+              <Tooltip text="P5JS">
+                <img
+                  src={techIcon.P5JS}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
             );
           case "C#":
             return (
-              <img
-                src={techIcon.Csharp}
-                alt={props}
-                className={techIconStyle}
-              />
+              <Tooltip text="C#">
+                <img
+                  src={techIcon.Csharp}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
             );
           case "Java":
             return (
-              <img src={techIcon.Java} alt={props} className={techIconStyle} />
+              <Tooltip text="Java">
+                <img
+                  src={techIcon.Java}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
             );
           case "C":
             return (
-              <img src={techIcon.C} alt={props} className={techIconStyle} />
+              <Tooltip text="C">
+                <img src={techIcon.C} alt={props} className={techIconStyle} />
+              </Tooltip>
             );
           case "SQL":
             return (
-              <img src={techIcon.SQL} alt={props} className={techIconStyle} />
+              <Tooltip text="SQL">
+                <img src={techIcon.SQL} alt={props} className={techIconStyle} />
+              </Tooltip>
             );
           case "CSS":
             return (
-              <img src={techIcon.CSS} alt={props} className={techIconStyle} />
+              <Tooltip text="CSS">
+                <img src={techIcon.CSS} alt={props} className={techIconStyle} />
+              </Tooltip>
             );
           case "HTML":
             return (
-              <img src={techIcon.HTML} alt={props} className={techIconStyle} />
+              <Tooltip text="HTML">
+                <img
+                  src={techIcon.HTML}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
             );
           case "BootStrap":
             return (
-              <img
-                src={techIcon.BootStrap}
-                alt={props}
-                className={techIconStyle}
-              />
+              <Tooltip text="Boot Strap">
+                <img
+                  src={techIcon.BootStrap}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
             );
-            case "Docker":
-              return (
+          case "Docker":
+            return (
+              <Tooltip text="Docker">
                 <img
                   src={techIcon.Docker}
                   alt={props}
                   className={techIconStyle}
                 />
-              );
+              </Tooltip>
+            );
+          case "SQLite":
+            return (
+              <Tooltip text="SQLite">
+                <img
+                  src={techIcon.SQLite}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
+            );
+          case "EntityFramework":
+            return (
+              <Tooltip text="Entity Framework">
+                <img
+                  src={techIcon.EntityFramework}
+                  alt={props}
+                  className={techIconStyle}
+                />
+              </Tooltip>
+            );
           default:
         }
       })()}

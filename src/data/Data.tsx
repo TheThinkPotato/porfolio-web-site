@@ -2,6 +2,32 @@ const data = {
   code: [
     {
       type: "web",
+      title: "Minecraft Bedrock Server Map",
+      subtitle: "Map for a Minecraft Bedrock Server with stats.",
+      description:
+        "A Minecraft Bedrock server map visualization using Unmined, enhanced with a custom server mod to extract additional data. The mod wraps the server executable, extracts data into SQLite, and serves it to the front end.",
+      image: "../images/code-minecraftMap.jpg",
+      link: "http://parakeet.freeddns.org:888",
+      linkDesc: "Minecraft Bedrock Server Map Webpage Link",
+      gitHubLink: "https://github.com/TheThinkPotato/BedrockSvrLog",
+      tech: ["React","TypeScript", "TailWind","C#","JavaScript","SQLite", "EntityFramework"],
+      videoLink: "",
+    },
+    {
+      type: "web",
+      title: "AZ900 Quiz",
+      subtitle: "Quiz application for the AZ-900 Azure Fundamentals exam.",
+      description:
+        "Quiz application for the AZ-900 Azure Fundamentals exam. Made to help fellow colleagues prepare for the exam. The application is built using React and TypeScript. The application is hosted on Netlify.",
+      image: "../images/code-az900.jpg",
+      link: "https://az900quiz.netlify.app/",
+      linkDesc: "AZ900 Quiz Webpage Link",
+      gitHubLink: "https://github.com/TheThinkPotato/AZ900-Quiz",
+      tech: ["React", "TypeScript", "TailWind"],
+      videoLink: "",
+    },
+    {
+      type: "web",
       title: "WebLocate",
       subtitle: "Website for checking IP and Domains to see if they are safe",
       description:
